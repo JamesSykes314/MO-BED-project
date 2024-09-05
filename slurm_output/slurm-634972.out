@@ -1,0 +1,4 @@
+./plotting.py: line 1: import: command not found
+./plotting.py: line 2: import: command not found
+./plotting.py: line 4: syntax error near unexpected token `('
+./plotting.py: line 4: `results = pd.read_csv('CSV_results/results_df_1')'

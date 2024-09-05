@@ -1,0 +1,4 @@
+#!/bin/bash
+mv *.png images
+mv *.out slurm_output
+mv job_script_* job_scripts

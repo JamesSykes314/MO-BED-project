@@ -1,0 +1,2 @@
+/var/spool/slurmd/job635016/slurm_script: line 8: venv/bin/activate: No such file or directory
+python3: can't open file 'run_bayesopt.py': [Errno 2] No such file or directory
