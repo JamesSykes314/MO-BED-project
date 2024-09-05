@@ -310,20 +310,18 @@ def run_experiment(n_init, n_trials):
     parameters = [par_mw, par_logP, par_hbd, par_hba, par_tpsa, par_mr, par_rb, par_ar, par_ha]
     Exp_9_10.define_space(parameters)
 
-    import biomarker_functions as bi
-
     # Choose whether to standardize output (using data from LHC sample)
     stand_flag = False
 
     if stand_flag:
         X_unit = doe.latin_hypercube(n_dim=9, n_points=500, seed=1)
         X_real = utils.encode_to_real_ParameterSpace(X_unit, Exp_9_10.parameter_space)
-        Y = bi.compute_biomarkers(X_real)
+        Y = compute_biomarkers(X_real)
         bio_mean = pd.DataFrame(Y).mean().to_list()
         bio_std = pd.DataFrame(Y).std().to_list()
-        objective_func = lambda X: (bi.compute_biomarkers(X) - bio_mean) / bio_std
+        objective_func = lambda X: (compute_biomarkers(X) - bio_mean) / bio_std
     else:
-        objective_func = bi.compute_biomarkers
+        objective_func = compute_biomarkers
 
     # Define the design space
     X_name_list = [
