@@ -5,9 +5,9 @@ from experiment_9_10_dense import run_experiment
 
 # make dictionary with keys and associated functions so then can get the right function from dictionary based on key in arguments_list (Google if key is right word or maybe id??)
 
-arguments_list = [[2,20,0],[2,10,10]]
+arguments_list = [[1,500,0],[1,200,300]]
 n_tests = len(arguments_list)
-iterations = 2
+iterations = 50
 results = np.empty(shape=(n_tests, iterations+3))
 objective_functions_name = "9_10_dense"
 

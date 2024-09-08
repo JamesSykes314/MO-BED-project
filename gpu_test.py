@@ -1,7 +1,13 @@
 import torch
 import time
-device = torch.device('cpu')
-n = 5000
+if torch.cuda.is_available():
+    device = torch.device('cuda')
+elif torch.backends.mps.is_available():
+    device = torch.device('mps')
+else:
+    device = torch.device('cpu')
+print(device)
+n = 10000
 x = torch.rand((n, n), dtype=torch.float32)
 y = torch.rand((n, n), dtype=torch.float32)
 x = x.to(device)
