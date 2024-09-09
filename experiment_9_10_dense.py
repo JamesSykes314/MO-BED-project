@@ -392,10 +392,12 @@ def run_experiment(n_init, n_trials):
     from botorch.utils.multi_objective.hypervolume import Hypervolume
     sample_size = Exp_9_10.Y_real.shape[0]
     front_size = Exp_9_10.get_optim()[0].shape[0]
-    final_hypervolume_obj = Hypervolume(torch.tensor(ref_point))
-    final_hypervolume = final_hypervolume_obj.compute(torch.from_numpy(Exp_9_10.get_optim()[0]))
+    ref_point = torch.tensor(ref_point)
+    optimal_points = torch.tensor(Exp_9_10.get_optim()[0])
+    final_hypervolume_obj = Hypervolume(ref_point)
+    final_hypervolume = final_hypervolume_obj.compute(optimal_points)
     end_time = time.time()
     time_taken = end_time - start_time
     return front_size / sample_size, final_hypervolume, time_taken
 
-# print(run_experiment(250,100))
+print(run_experiment(300,200))
