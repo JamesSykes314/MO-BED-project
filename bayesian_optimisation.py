@@ -47,9 +47,16 @@ def run_single_obj_experiment(objective_function, parameter_list, sampling_metho
 
     Exp.set_optim_specs(objective_func=objective_func, maximize=maximise)
 
+    opt_check_freq = 20
+    opt_array = np.array(np.zeros((1+(n_trials-1)//opt_check_freq, n_dim+1)))
     for i in range(n_trials):
         if i % 20 == 0:
             print("{} trials completed".format(i))
+        if i % opt_check_freq == 0:
+            Y_optim, X_optim, _ = Exp.get_optim()
+            opt_array[i//opt_check_freq,:n_dim] = X_optim
+            opt_array[i//opt_check_freq,n_dim] = Y_optim
+            print(X_optim, Y_optim)
         # Generate the next experiment point
         X_new, X_new_real, acq_func = Exp.generate_next_point(acq_func_name=acq_function, n_candidates=1)
         # Get the response at this point
@@ -60,4 +67,5 @@ def run_single_obj_experiment(objective_function, parameter_list, sampling_metho
     final_time = time.time()
     time_taken = final_time - start_time
     Y_optim, X_optim, _ = Exp.get_optim()
+    print(opt_array)
     return X_optim, Y_optim, time_taken
