@@ -26,22 +26,25 @@ def function_numpy_conversion(func):
         return y
     return new_func
 
-def run_single_obj_experiment(objective_function, parameter_list, sampling_method, n_init, n_trials, acq_function="EI", kernel="default", maximise=False):
+def run_single_obj_experiment(objective_function, parameter_list, sampling_method, n_init, n_trials, acq_function="EI", kernel="default", maximise=False, plotting=False):
     start_time = time.time()
     Exp = bo.Experiment('Experiment')
     Exp.define_space(parameter_list)
     objective_func = function_numpy_conversion(objective_function)
     n_dim = len(parameter_list)
-
+    if n_dim != 1 and plotting:
+        plotting = False
+        print("Plotting not available since objective function has more than one input.")
     try:
-        if sampling_method=="LHS":
+        if sampling_method == "LHS":
             X_init = doe.latin_hypercube(n_dim=n_dim, n_points=n_init)
-        elif sampling_method=="randomized_design":
+        elif sampling_method == "randomized_design":
             X_init = doe.randomized_design(n_dim=n_dim, n_points=n_init)
         else:
             raise Exception("Choose either LHS or randomized_design for the sampling method.")
     except:
-        return "Experiment failed."
+        print('Using LHS.')
+        X_init = doe.latin_hypercube(n_dim=n_dim, n_points=n_init)
 
     Y_init = bo.eval_objective_func_encoding(X_init, Exp.parameter_space, objective_func)
     Exp.input_data(X_init,
@@ -66,6 +69,11 @@ def run_single_obj_experiment(objective_function, parameter_list, sampling_metho
         X_new, X_new_real, acq_func = Exp.generate_next_point(acq_func_name=acq_function, n_candidates=1)
         # Get the response at this point
         Y_new_real = objective_func(X_new_real)
+        if plotting:
+            print('Iteration {}, objective function'.format(i + 1))
+            plotting.response_1d_exp(Exp, X_new=X_new, mesh_size=1000, plot_real=True, save_fig=save_fig_flag)
+            print('Iteration {}, acquisition function'.format(i + 1))
+            plotting.acq_func_1d_exp(Exp, X_new=X_new, mesh_size=1000, save_fig=save_fig_flag)
         # Retrain the model by input the next point into Exp object
         Exp.run_trial(X_new, X_new_real, Y_new_real)
 
