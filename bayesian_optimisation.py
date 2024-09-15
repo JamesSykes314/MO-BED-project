@@ -26,14 +26,14 @@ def function_numpy_conversion(func):
         return y
     return new_func
 
-def run_single_obj_experiment(objective_function, parameter_list, sampling_method, n_init, n_trials, acq_function="EI", kernel="default", maximise=False, plotting=False):
+def run_single_obj_experiment(objective_function, parameter_list, sampling_method, n_init, n_trials, acq_function="EI", kernel="default", maximise=False, plotting_flag=False):
     start_time = time.time()
     Exp = bo.Experiment('Experiment')
     Exp.define_space(parameter_list)
     objective_func = function_numpy_conversion(objective_function)
     n_dim = len(parameter_list)
-    if n_dim != 1 and plotting:
-        plotting = False
+    if n_dim != 1 and plotting_flag:
+        plotting_flag = False
         print("Plotting not available since objective function has more than one input.")
     try:
         if sampling_method == "LHS":
@@ -54,6 +54,8 @@ def run_single_obj_experiment(objective_function, parameter_list, sampling_metho
 
     Exp.set_optim_specs(objective_func=objective_func, maximize=maximise)
 
+    duplicate_obj_func = Exp.objective_func
+
     opt_check_freq = 20
     opt_array_rows = 2+(n_trials-1)//opt_check_freq
     opt_array = np.array(np.zeros((opt_array_rows, n_dim+1)))
@@ -69,11 +71,14 @@ def run_single_obj_experiment(objective_function, parameter_list, sampling_metho
         X_new, X_new_real, acq_func = Exp.generate_next_point(acq_func_name=acq_function, n_candidates=1)
         # Get the response at this point
         Y_new_real = objective_func(X_new_real)
-        if plotting:
+        if plotting_flag:
             print('Iteration {}, objective function'.format(i + 1))
-            plotting.response_1d_exp(Exp, X_new=X_new, mesh_size=1000, plot_real=True, save_fig=save_fig_flag)
+            Y_new = bo.eval_objective_func(X_new, Exp.X_ranges, Exp.objective_func)
+            Exp.objective_func = None
+            plotting.response_1d_exp(Exp, X_new=X_new, Y_new=Y_new, mesh_size=100, plot_real=True, save_fig=False)
+            Exp.objective_func = duplicate_obj_func
             print('Iteration {}, acquisition function'.format(i + 1))
-            plotting.acq_func_1d_exp(Exp, X_new=X_new, mesh_size=1000, save_fig=save_fig_flag)
+            plotting.acq_func_1d_exp(Exp, X_new=X_new, mesh_size=100, save_fig=False)
         # Retrain the model by input the next point into Exp object
         Exp.run_trial(X_new, X_new_real, Y_new_real)
 
