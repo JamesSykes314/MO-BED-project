@@ -6,7 +6,7 @@ import bayesian_optimisation as bayopt
 from nextorch import plotting, bo, doe, utils, io, parameter
 
 def run_bayes_opt_benchmark_fns(n_trials):
-    func = bf.Ackley(n_dimensions=4)
+    func = bf.Ackley(n_dimensions=16)
     total_samples = 100
     iterations = 30
     if not isinstance(n_trials, int):
