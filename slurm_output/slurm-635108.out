@@ -1,0 +1,2 @@
+/var/spool/slurmd/job635108/slurm_script: line 11: 342036 Killed                  python3 gpu_test.py
+slurmstepd: error: Detected 1 oom_kill event in StepId=635108.batch. Some of the step tasks have been OOM Killed.

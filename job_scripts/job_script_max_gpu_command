@@ -1,0 +1,5 @@
+#!/bin/bash
+srun -N 1 -c 2 --gres=gpu:1 -p "res-gpu-small" --exclude=gpu3,gpu2,gpu0,gpu1,gpu4,gpu5,gpu6,gpu8 --qos="short" -J "mobed" -t 36:99:99
+source /etc/profile
+source venv/bin/activate
+python3 gpu_test.py

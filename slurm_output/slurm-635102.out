@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "gpu_test.py", line 8, in <module>
+    y = y.to(device)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 5.96 GiB. GPU 0 has a total capacity of 10.75 GiB of which 4.63 GiB is free. Including non-PyTorch memory, this process has 6.11 GiB memory in use. Of the allocated memory 5.96 GiB is allocated by PyTorch, and 0 bytes is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

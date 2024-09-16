@@ -1,0 +1,103 @@
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:32: UserWarning: torch.cholesky is deprecated in favor of torch.linalg.cholesky and will be removed in a future PyTorch release.
+L = torch.cholesky(A)
+should be replaced with
+L = torch.linalg.cholesky(A)
+and
+U = torch.cholesky(A, upper=True)
+should be replaced with
+U = torch.linalg.cholesky(A).mH
+This transform will produce equivalent results for all valid (symmetric positive definite) inputs. (Triggered internally at ../aten/src/ATen/native/BatchLinearAlgebra.cpp:1688.)
+  L = torch.cholesky(A, upper=upper, out=out)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/lazy/triangular_lazy_tensor.py:124: UserWarning: torch.triangular_solve is deprecated in favor of torch.linalg.solve_triangularand will be removed in a future PyTorch release.
+torch.linalg.solve_triangular has its arguments reversed and does not return a copy of one of the inputs.
+X = torch.triangular_solve(B, A).solution
+should be replaced with
+X = torch.linalg.solve_triangular(A, B). (Triggered internally at ../aten/src/ATen/native/BatchLinearAlgebra.cpp:2184.)
+  res = torch.triangular_solve(right_tensor, self.evaluate(), upper=self.upper).solution
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/models/exact_prediction_strategies.py:233: UserWarning: torch.qr is deprecated in favor of torch.linalg.qr and will be removed in a future PyTorch release.
+The boolean parameter 'some' has been replaced with a string parameter 'mode'.
+Q, R = torch.qr(A, some)
+should be replaced with
+Q, R = torch.linalg.qr(A, 'reduced' if some else 'complete') (Triggered internally at ../aten/src/ATen/native/BatchLinearAlgebra.cpp:2416.)
+  Q, R = torch.qr(new_root.cpu())
+Iter 10/100: 38.44881820678711
+Iter 20/100: 29.162050247192383
+Iter 30/100: 28.379833221435547
+Iter 40/100: 28.07176971435547
+Iter 50/100: 27.53897476196289
+Iter 60/100: 27.439966201782227
+Iter 70/100: 27.412242889404297
+Iter 80/100: 27.375137329101562
+Iter 90/100: 27.367023468017578
+Iter 100/100: 27.361614227294922
+Test number 1 completed!
+Iter 10/100: 38.37718200683594
+Iter 20/100: 29.094703674316406
+Iter 30/100: 28.303890228271484
+Iter 40/100: 27.980239868164062
+Iter 50/100: 27.449254989624023
+Iter 60/100: 27.357990264892578
+Iter 70/100: 27.33055305480957
+Iter 80/100: 27.29499053955078
+Iter 90/100: 27.287338256835938
+Iter 100/100: 27.28230857849121
+Test number 2 completed!
+Running the trials took 0.05 minutes.
+Iter 10/100: 61.4305534362793
+Iter 20/100: 42.91632080078125
+Iter 30/100: 41.479461669921875
+Iter 40/100: 40.67190933227539
+Iter 50/100: 39.22532653808594
+Iter 60/100: 38.7208251953125
+Iter 70/100: 38.43876647949219
+Iter 80/100: 38.185611724853516
+Iter 90/100: 38.03391647338867
+Iter 100/100: 37.917808532714844
+0 trials completed
+Iter 10/100: 35.931243896484375
+Iter 20/100: 35.83185958862305
+Iter 30/100: 35.819618225097656
+Iter 10/100: 34.31576919555664
+Iter 20/100: 34.29016876220703
+Iter 10/100: 33.06968307495117
+Iter 20/100: 33.04827880859375
+Iter 10/100: 31.929798126220703
+Iter 10/100: 31.0147705078125
+Iter 10/100: 30.129199981689453
+Iter 10/100: 29.40911865234375
+Iter 10/100: 28.732561111450195
+Iter 10/100: 28.05076026916504
+Iter 10/100: 27.455890655517578
+Test number 1 completed!
+Iter 10/100: 61.42599868774414
+Iter 20/100: 42.920982360839844
+Iter 30/100: 41.484474182128906
+Iter 40/100: 40.67613220214844
+Iter 50/100: 39.23014450073242
+Iter 60/100: 38.724761962890625
+Iter 70/100: 38.44245910644531
+Iter 80/100: 38.189002990722656
+Iter 90/100: 38.037078857421875
+Iter 100/100: 37.920806884765625
+0 trials completed
+Iter 10/100: 36.58334732055664
+Iter 20/100: 36.43179702758789
+Iter 30/100: 36.3766975402832
+Iter 40/100: 36.35547637939453
+Iter 50/100: 36.345497131347656
+Iter 60/100: 36.34109878540039
+Iter 10/100: 34.84584045410156
+Iter 10/100: 33.60847473144531
+Iter 10/100: 32.464439392089844
+Iter 20/100: 32.451141357421875
+Iter 10/100: 31.455760955810547
+Iter 20/100: 31.43706512451172
+Iter 10/100: 30.544889450073242
+Iter 10/100: 29.755998611450195
+Iter 20/100: 29.744728088378906
+Iter 10/100: 29.049419403076172
+Iter 10/100: 28.48370361328125
+Iter 20/100: 28.471065521240234
+Iter 10/100: 27.881755828857422
+Test number 2 completed!
+Running the trials took 0.06 minutes.
