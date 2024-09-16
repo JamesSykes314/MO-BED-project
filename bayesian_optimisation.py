@@ -1,6 +1,7 @@
 import os
 import sys
 import time
+from datetime import datetime
 import numpy as np
 import pandas as pd
 import torch
@@ -28,7 +29,7 @@ def function_numpy_conversion(func):
 
 def run_single_obj_experiment(objective_function, parameter_list, sampling_method, n_init, n_trials, acq_function="EI", kernel="default", maximise=False, plotting_flag=False, save_fig_flag=False):
     start_time = time.time()
-    Exp = bo.Experiment('Experiment')
+    Exp = bo.Experiment('Experiment_{}'.format(datetime.now().strftime("%Y%m%d-%H%M")))
     Exp.define_space(parameter_list)
     objective_func = function_numpy_conversion(objective_function)
     n_dim = len(parameter_list)
@@ -73,9 +74,8 @@ def run_single_obj_experiment(objective_function, parameter_list, sampling_metho
         Y_new_real = objective_func(X_new_real)
         if plotting_flag:
             print('Iteration {}, objective function'.format(i + 1))
-            Y_new = bo.eval_objective_func(X_new, Exp.X_ranges, Exp.objective_func)
             Exp.objective_func = None
-            plotting.response_1d_exp(Exp, X_new=X_new, Y_new=Y_new, mesh_size=100, plot_real=True, save_fig=save_fig_flag)
+            plotting.response_1d_exp(Exp, X_new=X_new, Y_new=Y_new_real, mesh_size=100, plot_real=True, save_fig=save_fig_flag)
             Exp.objective_func = duplicate_obj_func
             print('Iteration {}, acquisition function'.format(i + 1))
             plotting.acq_func_1d_exp(Exp, X_new=X_new, mesh_size=100, save_fig=save_fig_flag)
