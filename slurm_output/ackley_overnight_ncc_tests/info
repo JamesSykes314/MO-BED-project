@@ -20,8 +20,8 @@ Noteworthy points about results:
 - With the lower-dimensional functions, we roughly halved the mean minimum point
 found when we used BO to perform almost all of the samples.
 - With the higher-dimensional functions, the multiplicative improvement by using almost entirely BO samples was smaller
-- HOWEVER, it was even more clear in these cases that when we only had a 'budget' of 100 samples, we had to perform the minimum number (4)
-of initial samples if we wanted to see a significant improvement.
+- HOWEVER, it was even more clear in these cases that when we only had a 'budget' of 100 samples, we had to perform
+close to the minimum number (4) of initial samples if we wanted to see a significant improvement.
 
 200 samples:
 - 2-dimensional graph actually looks similar to ones from 100 samples tests, even though we're now looking at always performing 100 initial uninformed samples

@@ -1,6 +1,5 @@
 import benchmark_functions as bf
 import numpy as np
-import gpytorch
 import statistics
 import bayesian_optimisation as bayopt
 from nextorch import plotting, bo, doe, utils, io, parameter
