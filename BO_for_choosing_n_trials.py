@@ -6,9 +6,15 @@ import bayesian_optimisation as bayopt
 from nextorch import plotting, bo, doe, utils, io, parameter
 
 def run_bayes_opt_benchmark_fns(n_trials):
-    func = bf.Ackley(n_dimensions=16)
+    n_dims = 4
+    func = bf.Ackley(n_dimensions=n_dims)
     total_samples = 100
-    iterations = 30
+    iterations = 2
+    print("Function is {} ({} dimensions). Total samples in each optimisation process is {} and we are running {} "
+          "iterations of this each time we test a point (the number of trials).".format(func, n_dims, total_samples, iterations))
+    # Note: this should be changed so that it goes outside of this function. There should be another function with
+    # n_trials the only argument and then this function we are inside here should take the four variables above as
+    # arguments.
     if not isinstance(n_trials, int):
         n_trials = int(round(n_trials))
     print("Testing {} trials.".format(n_trials))
@@ -27,4 +33,4 @@ def run_bayes_opt_benchmark_fns(n_trials):
 
 
 param = parameter.Parameter(x_type="ordinal", x_range=[0, 96], interval=1)
-print(bayopt.run_single_obj_experiment(run_bayes_opt_benchmark_fns, parameter_list=[param], sampling_method="LHS", n_init=15, n_trials=10, plotting_flag=True, save_fig_flag=True))
+print(bayopt.run_single_obj_experiment(run_bayes_opt_benchmark_fns, parameter_list=[param], sampling_method="LHS", n_init=3, n_trials=10, plotting_flag=True, save_fig_flag=True))

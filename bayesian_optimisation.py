@@ -29,7 +29,7 @@ def function_numpy_conversion(func):
 
 def run_single_obj_experiment(objective_function, parameter_list, sampling_method, n_init, n_trials, acq_function="EI", kernel="default", maximise=False, plotting_flag=False, save_fig_flag=False):
     start_time = time.time()
-    Exp = bo.Experiment('Experiment_{}'.format(datetime.now().strftime("%Y%m%d-%H%M")))
+    Exp = bo.Experiment('Experiment_{}'.format(datetime.now().strftime("%Y%m%d-%H%M%S")))
     Exp.define_space(parameter_list)
     objective_func = function_numpy_conversion(objective_function)
     n_dim = len(parameter_list)
