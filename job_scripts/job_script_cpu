@@ -3,7 +3,7 @@
 #SBATCH -c 1
 #SBATCH -p "cpu"
 #SBATCH --qos="short"
-#SBATCH -t 06:00:00
+#SBATCH -t 12:00:00
 source /etc/profile
 source venv/bin/activate
 python3 BO_for_choosing_n_trials.py

@@ -6,10 +6,10 @@ import bayesian_optimisation as bayopt
 from nextorch import plotting, bo, doe, utils, io, parameter
 
 def run_bayes_opt_benchmark_fns(n_trials):
-    n_dims = 4
+    n_dims = 2
     func = bf.Ackley(n_dimensions=n_dims)
-    total_samples = 100
-    iterations = 2
+    total_samples = 200
+    iterations = int(round(10000/total_samples))
     print("Function is {} ({} dimensions). Total samples in each optimisation process is {} and we are running {} "
           "iterations of this each time we test a point (the number of trials).".format(func, n_dims, total_samples, iterations))
     # Note: this should be changed so that it goes outside of this function. There should be another function with
