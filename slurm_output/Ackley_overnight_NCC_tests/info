@@ -1,3 +1,6 @@
+(This was written when directory only contained 100_samples, 200_samples_100_initial and 400_samples_300_initial.
+I've since redone the latter two tests correctly and added these directories.)
+
 Brief info:
 - Tested Ackley function.
 - Tested 2, 3, 4, 6, 8, 10, 12 and 16-dimensional versions (in this order).
