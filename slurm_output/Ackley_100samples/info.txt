@@ -1,7 +1,0 @@
-Test info:
-Ackley, 30 iterations, 100 total samples, searching in [0, 96].
-Dims tested (in order from earliest to latest):
-2, 3, 4, 6, 8, 10, 12, 16
-Location of optimal point found:
-83, 87, 85, 94, 96, 96, 95, 96
-The images didn't all save as some were given same directory name. Not sure which ones these two correspond to.
