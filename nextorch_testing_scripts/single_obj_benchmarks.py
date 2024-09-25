@@ -1,6 +1,5 @@
 import benchmark_functions as bf
 import numpy as np
-import statistics
 import bayesian_optimisation as bayopt
 from nextorch import plotting, bo, doe, utils, io, parameter
 
@@ -26,7 +25,7 @@ def mean_min_benchmark(bench_func, n_dims, total_samples, n_trials, iterations):
                 raise ValueError("Not a valid result")
         except Exception as e:
             print("Error: {}".format(e))
-    return statistics.fmean(min_values)
+    return sum(min_values)/len(min_values)
 
 # Need to make sure the images go into folders that contain info on what the arguments were/or automatically go into the right folder structure
 
@@ -37,9 +36,3 @@ def choose_mean_min_bench_args(func, n_dims, total_samples, iterations="default"
     def new_function(n_trials):
         return mean_min_benchmark(func, n_dims, total_samples, n_trials, iterations)
     return new_function
-
-
-if __name__ == "__main__":
-    param = parameter.Parameter(x_type="ordinal", x_range=[0, 96], interval=1)
-    run_bayes_opt_benchmark_fns = choose_mean_min_bench_args(bf.Ackley, 2, 200)
-    print(bayopt.run_single_obj_experiment(run_bayes_opt_benchmark_fns, parameter_list=[param], sampling_method="LHS", n_init=3, n_trials=10, plotting_flag=True, save_fig_flag=True))

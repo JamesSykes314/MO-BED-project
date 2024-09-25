@@ -27,7 +27,7 @@ def function_numpy_conversion(func):
         return y
     return new_func
 
-def run_single_obj_experiment(objective_function, parameter_list, sampling_method, n_init, n_trials, acq_function="EI", kernel="default", maximise=False, plotting_flag=False, save_fig_flag=False):
+def run_single_obj_experiment(objective_function, parameter_list, sampling_method, n_init, n_trials, acq_function="EI", kernel="default", maximise=False, plotting_flag=False, save_all_figs=False, save_final_fig=False):
     start_time = time.time()
     Exp = bo.Experiment('Experiment_{}'.format(datetime.now().strftime("%Y%m%d-%H%M%S")))
     Exp.define_space(parameter_list)
@@ -72,13 +72,18 @@ def run_single_obj_experiment(objective_function, parameter_list, sampling_metho
         X_new, X_new_real, acq_func = Exp.generate_next_point(acq_func_name=acq_function, n_candidates=1)
         # Get the response at this point
         Y_new_real = objective_func(X_new_real)
-        if plotting_flag:
+        if save_final_fig and i == (n_trials - 1):
+            Exp.objective_func = None
+            plotting.response_1d_exp(Exp, X_new=X_new, Y_new=Y_new_real, mesh_size=100, plot_real=True,
+                                     save_fig=True)
+            Exp.objective_func = duplicate_obj_func
+        elif plotting_flag:
             print('Iteration {}, objective function'.format(i + 1))
             Exp.objective_func = None
-            plotting.response_1d_exp(Exp, X_new=X_new, Y_new=Y_new_real, mesh_size=100, plot_real=True, save_fig=save_fig_flag)
+            plotting.response_1d_exp(Exp, X_new=X_new, Y_new=Y_new_real, mesh_size=100, plot_real=True, save_fig=save_all_figs)
             Exp.objective_func = duplicate_obj_func
             print('Iteration {}, acquisition function'.format(i + 1))
-            plotting.acq_func_1d_exp(Exp, X_new=X_new, mesh_size=100, save_fig=save_fig_flag)
+            plotting.acq_func_1d_exp(Exp, X_new=X_new, mesh_size=100, save_fig=save_all_figs)
         # Retrain the model by input the next point into Exp object
         Exp.run_trial(X_new, X_new_real, Y_new_real)
 

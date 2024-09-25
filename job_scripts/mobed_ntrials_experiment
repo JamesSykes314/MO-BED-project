@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#SBATCH -N 1
+#SBATCH -c 1
+#SBATCH -p "cpu"
+#SBATCH --qos="short"
+#SBATCH -t 18:00:00
+
+source /etc/profile
+source venv/bin/activate
+
+bench_func=$BENCH_FUNC
+n_dims=$N_DIMS
+total_samples=$TOTAL_SAMPLES
+
+python3 nextorch_testing_scripts/run_mean_min_bench.py --bench_func $bench_func --n_dims $n_dims --total_samples $total_samples
