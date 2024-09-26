@@ -1,0 +1,2647 @@
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:32: UserWarning: torch.cholesky is deprecated in favor of torch.linalg.cholesky and will be removed in a future PyTorch release.
+L = torch.cholesky(A)
+should be replaced with
+L = torch.linalg.cholesky(A)
+and
+U = torch.cholesky(A, upper=True)
+should be replaced with
+U = torch.linalg.cholesky(A).mH
+This transform will produce equivalent results for all valid (symmetric positive definite) inputs. (Triggered internally at ../aten/src/ATen/native/BatchLinearAlgebra.cpp:1688.)
+  L = torch.cholesky(A, upper=upper, out=out)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/lazy/triangular_lazy_tensor.py:124: UserWarning: torch.triangular_solve is deprecated in favor of torch.linalg.solve_triangularand will be removed in a future PyTorch release.
+torch.linalg.solve_triangular has its arguments reversed and does not return a copy of one of the inputs.
+X = torch.triangular_solve(B, A).solution
+should be replaced with
+X = torch.linalg.solve_triangular(A, B). (Triggered internally at ../aten/src/ATen/native/BatchLinearAlgebra.cpp:2184.)
+  res = torch.triangular_solve(right_tensor, self.evaluate(), upper=self.upper).solution
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/models/exact_prediction_strategies.py:233: UserWarning: torch.qr is deprecated in favor of torch.linalg.qr and will be removed in a future PyTorch release.
+The boolean parameter 'some' has been replaced with a string parameter 'mode'.
+Q, R = torch.qr(A, some)
+should be replaced with
+Q, R = torch.linalg.qr(A, 'reduced' if some else 'complete') (Triggered internally at ../aten/src/ATen/native/BatchLinearAlgebra.cpp:2416.)
+  Q, R = torch.qr(new_root.cpu())
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-06 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-06 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-06 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-06 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-06 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-04 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/utils/cholesky.py:51: NumericalWarning: A not p.d., added jitter of 1.0e-05 to the diagonal
+  warnings.warn(f"A not p.d., added jitter of {jitter_new:.1e} to the diagonal", NumericalWarning)
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:259: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+Function is <benchmark_functions.benchmark_functions.Hypersphere object at 0x7f09fb4da7f0> (4 dimensions). Total samples in each optimisation process is 400 and we are running 25 iterations of this each time we test a certain number of trials.
+Testing 110 trials.
+Iter 10/100: 1.328232765197754
+Iter 20/100: 1.1423965692520142
+Iter 30/100: 0.7895918488502502
+Iter 40/100: -1.1210061311721802
+Iter 50/100: -1.3885618448257446
+Iter 60/100: -1.5314676761627197
+Iter 70/100: -1.6209821701049805
+Iter 80/100: -1.6792984008789062
+Iter 90/100: -1.7199283838272095
+Iter 100/100: -1.7505797147750854
+0 trials completed
+[ 0.03622369  0.62932323 -1.35164797  1.06434876] 3.3571503
+Iter 10/100: -1.7899153232574463
+Iter 20/100: -1.8190704584121704
+Iter 30/100: -1.8434699773788452
+Iter 40/100: -1.8639417886734009
+Iter 50/100: -1.8818093538284302
+Iter 60/100: -1.897148847579956
+Iter 70/100: -1.910353422164917
+Iter 80/100: -1.9222466945648193
+Iter 90/100: -1.9333502054214478
+Iter 100/100: -1.9424570798873901
+Iter 10/100: -1.9591772556304932
+Iter 20/100: -1.9716980457305908
+Iter 30/100: -1.9835853576660156
+Iter 40/100: -1.9931552410125732
+Iter 50/100: -2.001234531402588
+Iter 60/100: -2.0106184482574463
+Iter 70/100: -2.018019914627075
+Iter 80/100: -2.0239906311035156
+Iter 90/100: -2.0300540924072266
+Iter 100/100: -2.0367116928100586
+Iter 10/100: -2.042484760284424
+Iter 20/100: -2.049713611602783
+Iter 30/100: -2.0557639598846436
+Iter 40/100: -2.061195135116577
+Iter 50/100: -2.0663492679595947
+Iter 60/100: -2.071321725845337
+Iter 70/100: -2.0745620727539062
+Iter 80/100: -2.079334259033203
+Iter 90/100: -2.08325457572937
+Iter 100/100: -2.086700439453125
+Iter 10/100: -2.096944808959961
+Iter 20/100: -2.106013774871826
+Iter 30/100: -2.1129961013793945
+Iter 40/100: -2.117900848388672
+Iter 50/100: -2.1212639808654785
+Iter 60/100: -2.1244001388549805
+Iter 70/100: -2.129014730453491
+Iter 10/100: -2.1362688541412354
+Iter 20/100: -2.1407089233398438
+Iter 30/100: -2.1434381008148193
+Iter 10/100: -2.1529595851898193
+Iter 10/100: -2.1602110862731934
+Iter 10/100: -2.162745237350464
+Iter 10/100: -2.1730563640594482
+Iter 10/100: -2.1798317432403564
+Iter 20/100: -2.1813271045684814
+Iter 10/100: -2.186785936355591
+Iter 10/100: -2.196711540222168
+Iter 10/100: -2.2011542320251465
+Iter 10/100: -2.2056193351745605
+Iter 10/100: -2.211918354034424
+Iter 10/100: -2.215651273727417
+Iter 10/100: -2.2234013080596924
+Iter 10/100: -2.227053642272949
+Iter 10/100: -2.2318248748779297
+Iter 10/100: -2.239041805267334
+20 trials completed
+[-0.02051783 -0.00181389 -0.01072931  0.00814486] 0.0006057282050733193
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.333721399307251
+Iter 20/100: 1.1488550901412964
+Iter 30/100: 0.7978082299232483
+Iter 40/100: -1.103633999824524
+Iter 50/100: -1.3740652799606323
+Iter 60/100: -1.5131744146347046
+Iter 70/100: -1.601940631866455
+Iter 80/100: -1.6592501401901245
+Iter 90/100: -1.6989578008651733
+Iter 100/100: -1.729070782661438
+0 trials completed
+[0.89517086 0.69978715 0.61940031 0.20460459] 1.7165527
+Iter 10/100: -1.7674206495285034
+Iter 20/100: -1.79691481590271
+Iter 30/100: -1.8212965726852417
+Iter 40/100: -1.8419097661972046
+Iter 50/100: -1.859461784362793
+Iter 60/100: -1.8748470544815063
+Iter 70/100: -1.8878570795059204
+Iter 80/100: -1.9007811546325684
+Iter 90/100: -1.9106895923614502
+Iter 100/100: -1.9210009574890137
+Iter 10/100: -1.9374786615371704
+Iter 20/100: -1.9502145051956177
+Iter 30/100: -1.9623814821243286
+Iter 40/100: -1.9721200466156006
+Iter 50/100: -1.9811840057373047
+Iter 60/100: -1.9898765087127686
+Iter 70/100: -1.9966708421707153
+Iter 80/100: -2.0036087036132812
+Iter 90/100: -2.008729934692383
+Iter 100/100: -2.0152528285980225
+Iter 10/100: -2.026376247406006
+Iter 20/100: -2.033454656600952
+Iter 30/100: -2.0396435260772705
+Iter 40/100: -2.0453951358795166
+Iter 50/100: -2.0508415699005127
+Iter 60/100: -2.054995536804199
+Iter 70/100: -2.0599160194396973
+Iter 80/100: -2.0642852783203125
+Iter 90/100: -2.0679001808166504
+Iter 100/100: -2.073129177093506
+Iter 10/100: -2.082353353500366
+Iter 20/100: -2.090104818344116
+Iter 30/100: -2.0964584350585938
+Iter 40/100: -2.100893497467041
+Iter 50/100: -2.1049201488494873
+Iter 60/100: -2.1096818447113037
+Iter 70/100: -2.111004590988159
+Iter 80/100: -2.1136856079101562
+Iter 90/100: -2.117784261703491
+Iter 100/100: -2.1184563636779785
+Iter 10/100: -2.1266586780548096
+Iter 20/100: -2.1313931941986084
+Iter 30/100: -2.1314287185668945
+Iter 10/100: -2.1369569301605225
+Iter 20/100: -2.1405816078186035
+Iter 10/100: -2.147955894470215
+Iter 20/100: -2.152996063232422
+Iter 10/100: -2.1564834117889404
+Iter 10/100: -2.1677582263946533
+Iter 10/100: -2.173466682434082
+Iter 10/100: -2.17952561378479
+Iter 10/100: -2.185889959335327
+Iter 10/100: -2.1907951831817627
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3344345092773438
+Iter 20/100: 1.1508760452270508
+Iter 30/100: 0.7995668649673462
+Iter 40/100: -1.0342366695404053
+Iter 50/100: -1.3014315366744995
+Iter 60/100: -1.4465103149414062
+Iter 70/100: -1.5377110242843628
+Iter 80/100: -1.5969607830047607
+Iter 90/100: -1.6382864713668823
+Iter 100/100: -1.6694707870483398
+0 trials completed
+[-0.98034447  1.2550446   0.4217706   0.47580358] 2.9404917
+Iter 10/100: -1.7094050645828247
+Iter 20/100: -1.739766240119934
+Iter 30/100: -1.764707326889038
+Iter 40/100: -1.7859833240509033
+Iter 50/100: -1.8047734498977661
+Iter 60/100: -1.82048761844635
+Iter 70/100: -1.8343528509140015
+Iter 80/100: -1.8470594882965088
+Iter 90/100: -1.8576754331588745
+Iter 100/100: -1.8686678409576416
+Iter 10/100: -1.8859277963638306
+Iter 20/100: -1.8993436098098755
+Iter 30/100: -1.9103119373321533
+Iter 40/100: -1.9203630685806274
+Iter 50/100: -1.9316916465759277
+Iter 60/100: -1.9394395351409912
+Iter 70/100: -1.947627067565918
+Iter 80/100: -1.9555014371871948
+Iter 90/100: -1.9611369371414185
+Iter 100/100: -1.9669718742370605
+Iter 10/100: -1.9788308143615723
+Iter 20/100: -1.9860725402832031
+Iter 30/100: -1.9927855730056763
+Iter 40/100: -1.99838387966156
+Iter 50/100: -2.003234624862671
+Iter 60/100: -2.008906126022339
+Iter 70/100: -2.0137829780578613
+Iter 80/100: -2.017986297607422
+Iter 90/100: -2.0225493907928467
+Iter 100/100: -2.0282845497131348
+Iter 10/100: -2.038774251937866
+Iter 20/100: -2.0450439453125
+Iter 30/100: -2.0528759956359863
+Iter 40/100: -2.0550689697265625
+Iter 10/100: -2.066190481185913
+Iter 20/100: -2.070037841796875
+Iter 10/100: -2.081514835357666
+Iter 20/100: -2.0844900608062744
+Iter 30/100: -2.0901870727539062
+Iter 40/100: -2.0911171436309814
+Iter 50/100: -2.0948004722595215
+Iter 10/100: -2.103212833404541
+Iter 10/100: -2.1112430095672607
+Iter 20/100: -2.1125848293304443
+Iter 10/100: -2.121825933456421
+Iter 20/100: -2.1242146492004395
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3377070426940918
+Iter 20/100: 1.1536492109298706
+Iter 30/100: 0.8036260008811951
+Iter 40/100: -1.0547419786453247
+Iter 50/100: -1.3289859294891357
+Iter 60/100: -1.469555139541626
+Iter 70/100: -1.5594887733459473
+Iter 80/100: -1.6175724267959595
+Iter 90/100: -1.6577417850494385
+Iter 100/100: -1.688713788986206
+0 trials completed
+[-1.16830238  0.94402222  0.41220617  0.57699032] 2.7589402
+Iter 10/100: -1.728434681892395
+Iter 20/100: -1.7580502033233643
+Iter 30/100: -1.7826803922653198
+Iter 40/100: -1.8037985563278198
+Iter 50/100: -1.822171926498413
+Iter 60/100: -1.837979793548584
+Iter 70/100: -1.8518061637878418
+Iter 80/100: -1.8651037216186523
+Iter 90/100: -1.8756849765777588
+Iter 100/100: -1.8855888843536377
+Iter 10/100: -1.9017150402069092
+Iter 20/100: -1.9149878025054932
+Iter 30/100: -1.9263395071029663
+Iter 40/100: -1.937023639678955
+Iter 50/100: -1.9459021091461182
+Iter 60/100: -1.954473614692688
+Iter 70/100: -1.9632301330566406
+Iter 80/100: -1.968841314315796
+Iter 90/100: -1.9751750230789185
+Iter 100/100: -1.981268286705017
+Iter 10/100: -1.9931069612503052
+Iter 20/100: -2.0009477138519287
+Iter 30/100: -2.0068631172180176
+Iter 40/100: -2.0125980377197266
+Iter 50/100: -2.0180869102478027
+Iter 60/100: -2.023555040359497
+Iter 70/100: -2.028508186340332
+Iter 80/100: -2.032496690750122
+Iter 90/100: -2.0370664596557617
+Iter 100/100: -2.042346477508545
+Iter 10/100: -2.054753541946411
+Iter 20/100: -2.062328577041626
+Iter 30/100: -2.069237470626831
+Iter 40/100: -2.0736653804779053
+Iter 50/100: -2.0774474143981934
+Iter 10/100: -2.0866451263427734
+Iter 20/100: -2.0900518894195557
+Iter 30/100: -2.094428300857544
+Iter 40/100: -2.09757399559021
+Iter 10/100: -2.1053168773651123
+Iter 10/100: -2.1141700744628906
+Iter 10/100: -2.1222007274627686
+Iter 20/100: -2.1245532035827637
+Iter 30/100: -2.1280276775360107
+Iter 40/100: -2.1289753913879395
+Iter 10/100: -2.137690305709839
+Iter 10/100: -2.144716739654541
+Iter 10/100: -2.1533350944519043
+Iter 20/100: -2.1552281379699707
+Iter 10/100: -2.1610488891601562
+Iter 20/100: -2.1620707511901855
+Iter 10/100: -2.166691541671753
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3389090299606323
+Iter 20/100: 1.1559388637542725
+Iter 30/100: 0.8062320947647095
+Iter 40/100: -1.0547192096710205
+Iter 50/100: -1.3191460371017456
+Iter 60/100: -1.4583152532577515
+Iter 70/100: -1.545823335647583
+Iter 80/100: -1.6033544540405273
+Iter 90/100: -1.643425464630127
+Iter 100/100: -1.674469232559204
+0 trials completed
+[ 0.91813586 -0.49996191  0.04653058 -0.55195554] 1.3997554
+Iter 10/100: -1.7132811546325684
+Iter 20/100: -1.7429198026657104
+Iter 30/100: -1.7680307626724243
+Iter 40/100: -1.7889429330825806
+Iter 50/100: -1.8077077865600586
+Iter 60/100: -1.8231170177459717
+Iter 70/100: -1.8368638753890991
+Iter 80/100: -1.8492006063461304
+Iter 90/100: -1.8601487874984741
+Iter 100/100: -1.8707122802734375
+Iter 10/100: -1.8879389762878418
+Iter 20/100: -1.901572823524475
+Iter 30/100: -1.9134252071380615
+Iter 40/100: -1.9237953424453735
+Iter 50/100: -1.9332923889160156
+Iter 60/100: -1.9414551258087158
+Iter 70/100: -1.948729395866394
+Iter 80/100: -1.9563817977905273
+Iter 90/100: -1.9630478620529175
+Iter 100/100: -1.9686285257339478
+Iter 10/100: -1.9802958965301514
+Iter 20/100: -1.9880691766738892
+Iter 30/100: -1.9937360286712646
+Iter 40/100: -2.0001108646392822
+Iter 50/100: -2.005843162536621
+Iter 60/100: -2.010476589202881
+Iter 70/100: -2.0164999961853027
+Iter 80/100: -2.019683599472046
+Iter 90/100: -2.0232927799224854
+Iter 100/100: -2.030055284500122
+Iter 10/100: -2.041438341140747
+Iter 20/100: -2.0474331378936768
+Iter 30/100: -2.056816816329956
+Iter 40/100: -2.0594253540039062
+Iter 50/100: -2.063612699508667
+Iter 60/100: -2.06902813911438
+Iter 10/100: -2.0767297744750977
+Iter 10/100: -2.0856430530548096
+Iter 20/100: -2.0897836685180664
+Iter 30/100: -2.0925092697143555
+Iter 40/100: -2.0947039127349854
+Iter 10/100: -2.107433557510376
+Iter 10/100: -2.114487409591675
+Iter 10/100: -2.1198089122772217
+Iter 10/100: -2.129269599914551
+Iter 10/100: -2.1370954513549805
+Iter 10/100: -2.144435167312622
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.335168719291687
+Iter 20/100: 1.1509212255477905
+Iter 30/100: 0.7997813820838928
+Iter 40/100: -1.089486837387085
+Iter 50/100: -1.3565990924835205
+Iter 60/100: -1.4963735342025757
+Iter 70/100: -1.5843830108642578
+Iter 80/100: -1.6419315338134766
+Iter 90/100: -1.6817142963409424
+Iter 100/100: -1.7124128341674805
+0 trials completed
+[-0.197663   -0.39560649 -1.17174722 -0.11754787] 1.5823842
+Iter 10/100: -1.7512558698654175
+Iter 20/100: -1.7808042764663696
+Iter 30/100: -1.8054956197738647
+Iter 40/100: -1.826516032218933
+Iter 50/100: -1.843933343887329
+Iter 60/100: -1.8595664501190186
+Iter 70/100: -1.8731791973114014
+Iter 80/100: -1.885254144668579
+Iter 90/100: -1.8961151838302612
+Iter 100/100: -1.906141757965088
+Iter 10/100: -1.9231995344161987
+Iter 20/100: -1.9355238676071167
+Iter 30/100: -1.9479225873947144
+Iter 40/100: -1.9585354328155518
+Iter 50/100: -1.9670884609222412
+Iter 60/100: -1.9754647016525269
+Iter 70/100: -1.9830111265182495
+Iter 80/100: -1.9903570413589478
+Iter 90/100: -1.9955281019210815
+Iter 100/100: -2.0020947456359863
+Iter 10/100: -2.0132570266723633
+Iter 20/100: -2.0206894874572754
+Iter 30/100: -2.0268595218658447
+Iter 40/100: -2.032392978668213
+Iter 50/100: -2.0376195907592773
+Iter 60/100: -2.04272723197937
+Iter 70/100: -2.047348976135254
+Iter 80/100: -2.0512237548828125
+Iter 90/100: -2.0554158687591553
+Iter 100/100: -2.0598151683807373
+Iter 10/100: -2.072242259979248
+Iter 20/100: -2.0788180828094482
+Iter 30/100: -2.0869855880737305
+Iter 40/100: -2.0914134979248047
+Iter 50/100: -2.0943851470947266
+Iter 60/100: -2.099238872528076
+Iter 70/100: -2.101726531982422
+Iter 80/100: -2.1038875579833984
+Iter 90/100: -2.1072638034820557
+Iter 10/100: -2.118643283843994
+Iter 10/100: -2.1264050006866455
+Iter 20/100: -2.1306891441345215
+Iter 10/100: -2.1386802196502686
+Iter 10/100: -2.1442859172821045
+Iter 20/100: -2.1508679389953613
+Iter 10/100: -2.1534061431884766
+Iter 20/100: -2.1588919162750244
+Iter 10/100: -2.1635971069335938
+Iter 10/100: -2.1693007946014404
+Iter 20/100: -2.1711349487304688
+Iter 30/100: -2.1722331047058105
+Iter 10/100: -2.179969549179077
+Iter 10/100: -2.1865427494049072
+Iter 10/100: -2.1927785873413086
+Iter 10/100: -2.19921875
+Iter 10/100: -2.2014708518981934
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3309582471847534
+Iter 20/100: 1.1451926231384277
+Iter 30/100: 0.7923698425292969
+Iter 40/100: -1.1148700714111328
+Iter 50/100: -1.3862255811691284
+Iter 60/100: -1.5269309282302856
+Iter 70/100: -1.6159106492996216
+Iter 80/100: -1.6743862628936768
+Iter 90/100: -1.7139418125152588
+Iter 100/100: -1.7447631359100342
+0 trials completed
+[ 0.98942184 -0.24105738  0.46047385  0.41394569] 1.4204514
+Iter 10/100: -1.7843225002288818
+Iter 20/100: -1.8136557340621948
+Iter 30/100: -1.8381013870239258
+Iter 40/100: -1.8585834503173828
+Iter 50/100: -1.8758182525634766
+Iter 60/100: -1.8913408517837524
+Iter 70/100: -1.9042195081710815
+Iter 80/100: -1.9163199663162231
+Iter 90/100: -1.9267152547836304
+Iter 100/100: -1.9364110231399536
+Iter 10/100: -1.9533417224884033
+Iter 20/100: -1.9657682180404663
+Iter 30/100: -1.9763497114181519
+Iter 40/100: -1.9873071908950806
+Iter 50/100: -1.996403694152832
+Iter 60/100: -2.003448486328125
+Iter 70/100: -2.0110645294189453
+Iter 80/100: -2.018214225769043
+Iter 90/100: -2.024171829223633
+Iter 100/100: -2.0301220417022705
+Iter 10/100: -2.0405895709991455
+Iter 20/100: -2.0480711460113525
+Iter 30/100: -2.0527243614196777
+Iter 40/100: -2.059408664703369
+Iter 50/100: -2.0633182525634766
+Iter 60/100: -2.06842041015625
+Iter 70/100: -2.072829008102417
+Iter 80/100: -2.0766313076019287
+Iter 90/100: -2.081007719039917
+Iter 100/100: -2.084665060043335
+Iter 10/100: -2.094428539276123
+Iter 20/100: -2.103156566619873
+Iter 30/100: -2.1086151599884033
+Iter 40/100: -2.1131882667541504
+Iter 50/100: -2.1196186542510986
+Iter 60/100: -2.123648166656494
+Iter 70/100: -2.1248886585235596
+Iter 80/100: -2.1254711151123047
+Iter 10/100: -2.1337664127349854
+Iter 20/100: -2.137359619140625
+Iter 30/100: -2.140803337097168
+Iter 40/100: -2.1429429054260254
+Iter 10/100: -2.151404619216919
+Iter 10/100: -2.1591267585754395
+Iter 10/100: -2.1662325859069824
+Iter 20/100: -2.1673426628112793
+Iter 10/100: -2.1753599643707275
+Iter 10/100: -2.1803181171417236
+Iter 10/100: -2.1831181049346924
+Iter 20/100: -2.1854517459869385
+Iter 10/100: -2.1927387714385986
+Iter 10/100: -2.198739528656006
+Iter 10/100: -2.202918291091919
+Iter 10/100: -2.209191083908081
+Iter 10/100: -2.2144880294799805
+Iter 10/100: -2.2183947563171387
+Iter 10/100: -2.2254738807678223
+Iter 10/100: -2.234966993331909
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3441802263259888
+Iter 20/100: 1.1615626811981201
+Iter 30/100: 0.8115130662918091
+Iter 40/100: -1.0433838367462158
+Iter 50/100: -1.3118739128112793
+Iter 60/100: -1.44802987575531
+Iter 70/100: -1.5358407497406006
+Iter 80/100: -1.592349648475647
+Iter 90/100: -1.6320335865020752
+Iter 100/100: -1.662434697151184
+0 trials completed
+[ 0.3532554  -0.8513832   0.45704488  1.12515212] 2.3245
+Iter 10/100: -1.7012356519699097
+Iter 20/100: -1.7305958271026611
+Iter 30/100: -1.7552460432052612
+Iter 40/100: -1.776157021522522
+Iter 50/100: -1.79477858543396
+Iter 60/100: -1.810412049293518
+Iter 70/100: -1.8240900039672852
+Iter 80/100: -1.837048888206482
+Iter 90/100: -1.8483660221099854
+Iter 100/100: -1.8586851358413696
+Iter 10/100: -1.8751780986785889
+Iter 20/100: -1.8893307447433472
+Iter 30/100: -1.9001520872116089
+Iter 40/100: -1.9106271266937256
+Iter 50/100: -1.9205117225646973
+Iter 60/100: -1.9292449951171875
+Iter 70/100: -1.936769723892212
+Iter 80/100: -1.944032073020935
+Iter 90/100: -1.9510473012924194
+Iter 100/100: -1.9571969509124756
+Iter 10/100: -1.9676117897033691
+Iter 20/100: -1.9752882719039917
+Iter 30/100: -1.982365369796753
+Iter 40/100: -1.9884576797485352
+Iter 50/100: -1.9938650131225586
+Iter 60/100: -1.9985677003860474
+Iter 70/100: -2.0032684803009033
+Iter 80/100: -2.007431745529175
+Iter 90/100: -2.015204668045044
+Iter 100/100: -2.0218100547790527
+Iter 10/100: -2.032376289367676
+Iter 20/100: -2.038621187210083
+Iter 30/100: -2.0435519218444824
+Iter 40/100: -2.0481388568878174
+Iter 50/100: -2.0545170307159424
+Iter 60/100: -2.0584163665771484
+Iter 70/100: -2.0599987506866455
+Iter 10/100: -2.068310022354126
+Iter 20/100: -2.0702731609344482
+Iter 10/100: -2.080368757247925
+Iter 20/100: -2.0840253829956055
+Iter 30/100: -2.086448907852173
+Iter 10/100: -2.0925583839416504
+Iter 10/100: -2.103461503982544
+Iter 20/100: -2.106031894683838
+Iter 10/100: -2.1132442951202393
+Iter 10/100: -2.117417097091675
+Iter 20/100: -2.120190382003784
+Iter 10/100: -2.1283857822418213
+Iter 10/100: -2.133631944656372
+Iter 10/100: -2.141866445541382
+Iter 10/100: -2.145432233810425
+Iter 10/100: -2.1532609462738037
+Iter 10/100: -2.159907817840576
+Iter 10/100: -2.1635420322418213
+Iter 20/100: -2.165159225463867
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3354880809783936
+Iter 20/100: 1.150792121887207
+Iter 30/100: 0.7993201017379761
+Iter 40/100: -1.1148035526275635
+Iter 50/100: -1.3799612522125244
+Iter 60/100: -1.5149328708648682
+Iter 70/100: -1.6015753746032715
+Iter 80/100: -1.6577295064926147
+Iter 90/100: -1.6968992948532104
+Iter 100/100: -1.7273515462875366
+0 trials completed
+[-0.03567457 -0.62849225 -0.81469656  1.09806395] 2.2657502
+Iter 10/100: -1.7638554573059082
+Iter 20/100: -1.7929660081863403
+Iter 30/100: -1.8170713186264038
+Iter 40/100: -1.8374512195587158
+Iter 50/100: -1.8549389839172363
+Iter 60/100: -1.8701210021972656
+Iter 70/100: -1.8835266828536987
+Iter 80/100: -1.8954476118087769
+Iter 90/100: -1.9059138298034668
+Iter 100/100: -1.9160258769989014
+Iter 10/100: -1.93287193775177
+Iter 20/100: -1.946087121963501
+Iter 30/100: -1.9574135541915894
+Iter 40/100: -1.9669973850250244
+Iter 50/100: -1.97673761844635
+Iter 60/100: -1.9843966960906982
+Iter 70/100: -1.9915740489959717
+Iter 80/100: -1.9983198642730713
+Iter 90/100: -2.0044572353363037
+Iter 100/100: -2.0106606483459473
+Iter 10/100: -2.021972417831421
+Iter 20/100: -2.0289149284362793
+Iter 30/100: -2.0347115993499756
+Iter 40/100: -2.040780782699585
+Iter 50/100: -2.0453875064849854
+Iter 60/100: -2.0502681732177734
+Iter 70/100: -2.0548322200775146
+Iter 80/100: -2.0583674907684326
+Iter 90/100: -2.062326669692993
+Iter 100/100: -2.0669009685516357
+Iter 10/100: -2.077718496322632
+Iter 20/100: -2.0868263244628906
+Iter 30/100: -2.0921545028686523
+Iter 40/100: -2.0987870693206787
+Iter 50/100: -2.1006412506103516
+Iter 60/100: -2.10471773147583
+Iter 10/100: -2.114816188812256
+Iter 10/100: -2.12509822845459
+Iter 10/100: -2.133195400238037
+Iter 10/100: -2.1425037384033203
+Iter 20/100: -2.1453492641448975
+Iter 30/100: -2.1498100757598877
+Iter 40/100: -2.1524038314819336
+Iter 50/100: -2.1523988246917725
+Iter 10/100: -2.1588895320892334
+Iter 10/100: -2.1671035289764404
+Iter 20/100: -2.167772054672241
+Iter 10/100: -2.1754236221313477
+Iter 10/100: -2.1827757358551025
+Iter 10/100: -2.1878888607025146
+Iter 10/100: -2.193575143814087
+Iter 10/100: -2.1999192237854004
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3439000844955444
+Iter 20/100: 1.1603279113769531
+Iter 30/100: 0.8111023902893066
+Iter 40/100: -1.0404337644577026
+Iter 50/100: -1.312928557395935
+Iter 60/100: -1.4481559991836548
+Iter 70/100: -1.5360448360443115
+Iter 80/100: -1.592595100402832
+Iter 90/100: -1.6327180862426758
+Iter 100/100: -1.6634447574615479
+0 trials completed
+[ 0.67631745 -0.16951497  0.45275977 -0.84545242] 1.4059218
+Iter 10/100: -1.6994357109069824
+Iter 20/100: -1.729129433631897
+Iter 30/100: -1.753724455833435
+Iter 40/100: -1.7754240036010742
+Iter 50/100: -1.7934476137161255
+Iter 60/100: -1.8097951412200928
+Iter 70/100: -1.8231830596923828
+Iter 80/100: -1.8357292413711548
+Iter 90/100: -1.8471788167953491
+Iter 100/100: -1.8579550981521606
+Iter 10/100: -1.8743857145309448
+Iter 20/100: -1.8874372243881226
+Iter 30/100: -1.8998534679412842
+Iter 40/100: -1.9110071659088135
+Iter 50/100: -1.9201452732086182
+Iter 60/100: -1.927812099456787
+Iter 70/100: -1.936206579208374
+Iter 80/100: -1.9437084197998047
+Iter 90/100: -1.9501913785934448
+Iter 100/100: -1.956633448600769
+Iter 10/100: -1.968095064163208
+Iter 20/100: -1.97532320022583
+Iter 30/100: -1.9810236692428589
+Iter 40/100: -1.9879446029663086
+Iter 50/100: -1.993207335472107
+Iter 60/100: -1.9989069700241089
+Iter 70/100: -2.00327205657959
+Iter 80/100: -2.007647752761841
+Iter 90/100: -2.012784957885742
+Iter 100/100: -2.0194132328033447
+Iter 10/100: -2.0308780670166016
+Iter 20/100: -2.038663864135742
+Iter 30/100: -2.0443615913391113
+Iter 40/100: -2.048856258392334
+Iter 50/100: -2.052128791809082
+Iter 60/100: -2.0565481185913086
+Iter 10/100: -2.068164825439453
+Iter 20/100: -2.0706639289855957
+Iter 30/100: -2.0720317363739014
+Iter 10/100: -2.081698417663574
+Iter 10/100: -2.0897278785705566
+Iter 20/100: -2.0926504135131836
+Iter 30/100: -2.094431161880493
+Iter 10/100: -2.1029438972473145
+Iter 10/100: -2.1103055477142334
+Iter 20/100: -2.112964391708374
+Iter 30/100: -2.114652633666992
+Iter 10/100: -2.1222779750823975
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3374015092849731
+Iter 20/100: 1.15310537815094
+Iter 30/100: 0.8014944195747375
+Iter 40/100: -1.0558205842971802
+Iter 50/100: -1.325379729270935
+Iter 60/100: -1.4660288095474243
+Iter 70/100: -1.554664134979248
+Iter 80/100: -1.6128640174865723
+Iter 90/100: -1.6530753374099731
+Iter 100/100: -1.6841593980789185
+0 trials completed
+[-0.0846681  -0.02555404  0.6982274  -0.12170793] 0.51015604
+Iter 10/100: -1.7227200269699097
+Iter 20/100: -1.7525603771209717
+Iter 30/100: -1.7772365808486938
+Iter 40/100: -1.7984262704849243
+Iter 50/100: -1.8162468671798706
+Iter 60/100: -1.8320887088775635
+Iter 70/100: -1.8455928564071655
+Iter 80/100: -1.8580204248428345
+Iter 90/100: -1.8696593046188354
+Iter 100/100: -1.8792475461959839
+Iter 10/100: -1.8974398374557495
+Iter 20/100: -1.9113333225250244
+Iter 30/100: -1.9221640825271606
+Iter 40/100: -1.9325931072235107
+Iter 50/100: -1.9418855905532837
+Iter 60/100: -1.9502272605895996
+Iter 70/100: -1.9580633640289307
+Iter 80/100: -1.9649152755737305
+Iter 90/100: -1.9705250263214111
+Iter 100/100: -1.9781067371368408
+Iter 10/100: -1.9862194061279297
+Iter 20/100: -1.9937270879745483
+Iter 30/100: -2.0001306533813477
+Iter 40/100: -2.005554676055908
+Iter 50/100: -2.0122902393341064
+Iter 60/100: -2.0168845653533936
+Iter 70/100: -2.0216176509857178
+Iter 80/100: -2.0266566276550293
+Iter 90/100: -2.0307469367980957
+Iter 100/100: -2.0354602336883545
+Iter 10/100: -2.0453948974609375
+Iter 20/100: -2.0544683933258057
+Iter 30/100: -2.0613620281219482
+Iter 40/100: -2.063689947128296
+Iter 50/100: -2.0684258937835693
+Iter 10/100: -2.0807809829711914
+Iter 20/100: -2.082396984100342
+Iter 10/100: -2.0944952964782715
+Iter 10/100: -2.102231979370117
+Iter 20/100: -2.1030936241149902
+Iter 30/100: -2.1069746017456055
+Iter 40/100: -2.110792636871338
+Iter 10/100: -2.1180784702301025
+Iter 10/100: -2.125753402709961
+Iter 20/100: -2.128422975540161
+Iter 10/100: -2.136472702026367
+Iter 10/100: -2.1339917182922363
+Iter 20/100: -2.1381945610046387
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3310991525650024
+Iter 20/100: 1.1455161571502686
+Iter 30/100: 0.7931097149848938
+Iter 40/100: -1.1008104085922241
+Iter 50/100: -1.3713308572769165
+Iter 60/100: -1.5140233039855957
+Iter 70/100: -1.6039704084396362
+Iter 80/100: -1.6626065969467163
+Iter 90/100: -1.7031302452087402
+Iter 100/100: -1.733962059020996
+0 trials completed
+[ 0.40390102  0.38141567  0.77271828 -0.84747158] 1.6239156
+Iter 10/100: -1.7735952138900757
+Iter 20/100: -1.8037724494934082
+Iter 30/100: -1.8283730745315552
+Iter 40/100: -1.84903085231781
+Iter 50/100: -1.866868019104004
+Iter 60/100: -1.881821870803833
+Iter 70/100: -1.8953180313110352
+Iter 80/100: -1.9072790145874023
+Iter 90/100: -1.9180381298065186
+Iter 100/100: -1.9278407096862793
+Iter 10/100: -1.9449373483657837
+Iter 20/100: -1.9580652713775635
+Iter 30/100: -1.9702314138412476
+Iter 40/100: -1.9798393249511719
+Iter 50/100: -1.9884233474731445
+Iter 60/100: -1.9971299171447754
+Iter 70/100: -2.002991199493408
+Iter 80/100: -2.010132074356079
+Iter 90/100: -2.016326904296875
+Iter 100/100: -2.0215818881988525
+Iter 10/100: -2.033338785171509
+Iter 20/100: -2.0406007766723633
+Iter 30/100: -2.0465617179870605
+Iter 40/100: -2.0521185398101807
+Iter 50/100: -2.0563430786132812
+Iter 60/100: -2.0619683265686035
+Iter 70/100: -2.0661070346832275
+Iter 80/100: -2.0706846714019775
+Iter 90/100: -2.074570655822754
+Iter 100/100: -2.0790984630584717
+Iter 10/100: -2.0903849601745605
+Iter 20/100: -2.0983376502990723
+Iter 30/100: -2.105342149734497
+Iter 40/100: -2.109560251235962
+Iter 50/100: -2.114945888519287
+Iter 60/100: -2.1166772842407227
+Iter 70/100: -2.1209073066711426
+Iter 10/100: -2.1301474571228027
+Iter 10/100: -2.136608600616455
+Iter 10/100: -2.145953416824341
+Iter 10/100: -2.1518468856811523
+Iter 10/100: -2.1603641510009766
+Iter 10/100: -2.167738914489746
+Iter 20/100: -2.1691460609436035
+Iter 10/100: -2.1776862144470215
+Iter 20/100: -2.1785809993743896
+Iter 10/100: -2.183570384979248
+Iter 20/100: -2.185539722442627
+Iter 30/100: -2.186544895172119
+Iter 10/100: -2.19271183013916
+Iter 10/100: -2.1979594230651855
+Iter 10/100: -2.204056739807129
+Iter 10/100: -2.2120473384857178
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3302456140518188
+Iter 20/100: 1.144991159439087
+Iter 30/100: 0.7920830845832825
+Iter 40/100: -1.115423321723938
+Iter 50/100: -1.3839671611785889
+Iter 60/100: -1.525652527809143
+Iter 70/100: -1.6146934032440186
+Iter 80/100: -1.6730427742004395
+Iter 90/100: -1.7128231525421143
+Iter 100/100: -1.7438344955444336
+0 trials completed
+[-0.03886193 -0.47428481 -0.46943921 -0.29273188] 0.5325215
+Iter 10/100: -1.7839462757110596
+Iter 20/100: -1.8131219148635864
+Iter 30/100: -1.8371890783309937
+Iter 40/100: -1.8586478233337402
+Iter 50/100: -1.8754549026489258
+Iter 60/100: -1.8907990455627441
+Iter 70/100: -1.9041813611984253
+Iter 80/100: -1.91587233543396
+Iter 90/100: -1.9268113374710083
+Iter 100/100: -1.9362480640411377
+Iter 10/100: -1.9538912773132324
+Iter 20/100: -1.9659005403518677
+Iter 30/100: -1.9780808687210083
+Iter 40/100: -1.988622784614563
+Iter 50/100: -1.9964994192123413
+Iter 60/100: -2.0053954124450684
+Iter 70/100: -2.0122783184051514
+Iter 80/100: -2.0186009407043457
+Iter 90/100: -2.025118350982666
+Iter 100/100: -2.0304996967315674
+Iter 10/100: -2.0407936573028564
+Iter 20/100: -2.0472474098205566
+Iter 30/100: -2.0527589321136475
+Iter 40/100: -2.05954647064209
+Iter 50/100: -2.064220666885376
+Iter 60/100: -2.0697977542877197
+Iter 70/100: -2.0733518600463867
+Iter 80/100: -2.0777747631073
+Iter 90/100: -2.0819759368896484
+Iter 100/100: -2.084648847579956
+Iter 10/100: -2.095836639404297
+Iter 20/100: -2.1043248176574707
+Iter 30/100: -2.1117100715637207
+Iter 40/100: -2.1173408031463623
+Iter 50/100: -2.1186468601226807
+Iter 10/100: -2.130274534225464
+Iter 20/100: -2.1345324516296387
+Iter 30/100: -2.136859178543091
+Iter 40/100: -2.1403729915618896
+Iter 10/100: -2.146510601043701
+Iter 10/100: -2.1546757221221924
+Iter 10/100: -2.1610469818115234
+Iter 10/100: -2.1705524921417236
+Iter 20/100: -2.1720852851867676
+Iter 10/100: -2.183084011077881
+Iter 10/100: -2.188774347305298
+Iter 10/100: -2.1924209594726562
+Iter 10/100: -2.1959540843963623
+Iter 10/100: -2.2068769931793213
+Iter 10/100: -2.210563898086548
+Iter 10/100: -2.215211868286133
+Iter 10/100: -2.2196102142333984
+Iter 10/100: -2.2264087200164795
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3439408540725708
+Iter 20/100: 1.16161048412323
+Iter 30/100: 0.8123766779899597
+Iter 40/100: -1.0116091966629028
+Iter 50/100: -1.281342625617981
+Iter 60/100: -1.4178829193115234
+Iter 70/100: -1.5058374404907227
+Iter 80/100: -1.5624409914016724
+Iter 90/100: -1.6020643711090088
+Iter 100/100: -1.632753610610962
+0 trials completed
+[ 1.65811227 -0.00476502  0.85261801 -0.45950439] 3.6874607
+Iter 10/100: -1.6705474853515625
+Iter 20/100: -1.6997817754745483
+Iter 30/100: -1.724730134010315
+Iter 40/100: -1.7461066246032715
+Iter 50/100: -1.7641836404800415
+Iter 60/100: -1.7804687023162842
+Iter 70/100: -1.7946414947509766
+Iter 80/100: -1.8074147701263428
+Iter 90/100: -1.81869375705719
+Iter 100/100: -1.8292957544326782
+Iter 10/100: -1.8479942083358765
+Iter 20/100: -1.862043023109436
+Iter 30/100: -1.8741374015808105
+Iter 40/100: -1.8837716579437256
+Iter 50/100: -1.8933649063110352
+Iter 60/100: -1.9027645587921143
+Iter 70/100: -1.9090145826339722
+Iter 80/100: -1.916820764541626
+Iter 90/100: -1.9242897033691406
+Iter 100/100: -1.930525302886963
+Iter 10/100: -1.9423115253448486
+Iter 20/100: -1.9493120908737183
+Iter 30/100: -1.9567421674728394
+Iter 40/100: -1.9633891582489014
+Iter 50/100: -1.96848726272583
+Iter 60/100: -1.9736952781677246
+Iter 70/100: -1.978593111038208
+Iter 80/100: -1.983659267425537
+Iter 90/100: -1.9906145334243774
+Iter 100/100: -1.9971160888671875
+Iter 10/100: -2.0078840255737305
+Iter 20/100: -2.0134692192077637
+Iter 30/100: -2.020498752593994
+Iter 40/100: -2.024651288986206
+Iter 50/100: -2.0266218185424805
+Iter 60/100: -2.0324978828430176
+Iter 10/100: -2.039989948272705
+Iter 20/100: -2.046309232711792
+Iter 30/100: -2.048949718475342
+Iter 40/100: -2.053241014480591
+Iter 10/100: -2.0580215454101562
+Iter 10/100: -2.067986488342285
+Iter 20/100: -2.0700252056121826
+Iter 30/100: -2.074472427368164
+Iter 10/100: -2.0784685611724854
+Iter 20/100: -2.082943916320801
+Iter 30/100: -2.0859804153442383
+Iter 10/100: -2.0893914699554443
+Iter 10/100: -2.0944507122039795
+Iter 20/100: -2.0966053009033203
+Iter 10/100: -2.1018545627593994
+Iter 10/100: -2.1080663204193115
+Iter 10/100: -2.1170992851257324
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3476163148880005
+Iter 20/100: 1.1651555299758911
+Iter 30/100: 0.8168202638626099
+Iter 40/100: -0.9956653714179993
+Iter 50/100: -1.2682472467422485
+Iter 60/100: -1.4039887189865112
+Iter 70/100: -1.4916859865188599
+Iter 80/100: -1.5484117269515991
+Iter 90/100: -1.5883631706237793
+Iter 100/100: -1.6190561056137085
+0 trials completed
+[-1.04907398  0.14076486  1.16924836  1.40491955] 4.461312
+Iter 10/100: -1.6562831401824951
+Iter 20/100: -1.6859068870544434
+Iter 30/100: -1.71110200881958
+Iter 40/100: -1.7327038049697876
+Iter 50/100: -1.751089096069336
+Iter 60/100: -1.7670948505401611
+Iter 70/100: -1.781337857246399
+Iter 80/100: -1.794793963432312
+Iter 90/100: -1.805848479270935
+Iter 100/100: -1.8167685270309448
+Iter 10/100: -1.8341583013534546
+Iter 20/100: -1.8478690385818481
+Iter 30/100: -1.8608404397964478
+Iter 40/100: -1.8706600666046143
+Iter 50/100: -1.880765676498413
+Iter 60/100: -1.890113115310669
+Iter 70/100: -1.8972409963607788
+Iter 80/100: -1.9049534797668457
+Iter 90/100: -1.9122101068496704
+Iter 100/100: -1.9185339212417603
+Iter 10/100: -1.9298031330108643
+Iter 20/100: -1.9377034902572632
+Iter 30/100: -1.9450985193252563
+Iter 40/100: -1.9506748914718628
+Iter 50/100: -1.957154393196106
+Iter 60/100: -1.9615776538848877
+Iter 70/100: -1.9663156270980835
+Iter 80/100: -1.9711685180664062
+Iter 90/100: -1.9787003993988037
+Iter 100/100: -1.9853569269180298
+Iter 10/100: -1.995344877243042
+Iter 20/100: -2.001462936401367
+Iter 30/100: -2.0080559253692627
+Iter 40/100: -2.0121262073516846
+Iter 50/100: -2.017949342727661
+Iter 60/100: -2.0219244956970215
+Iter 70/100: -2.0245754718780518
+Iter 80/100: -2.028927803039551
+Iter 10/100: -2.0370471477508545
+Iter 20/100: -2.0424697399139404
+Iter 30/100: -2.0452146530151367
+Iter 40/100: -2.0488009452819824
+Iter 10/100: -2.0511746406555176
+Iter 20/100: -2.054819107055664
+Iter 10/100: -2.0613601207733154
+Iter 20/100: -2.0638394355773926
+Iter 10/100: -2.0733203887939453
+Iter 10/100: -2.083601713180542
+Iter 20/100: -2.083439826965332
+Iter 10/100: -2.0915331840515137
+Iter 10/100: -2.098554849624634
+Iter 10/100: -2.107246160507202
+Iter 20/100: -2.108400583267212
+Iter 10/100: -2.117797613143921
+Iter 10/100: -2.1252853870391846
+Iter 10/100: -2.125520706176758
+Iter 10/100: -2.145812511444092
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3401633501052856
+Iter 20/100: 1.1563305854797363
+Iter 30/100: 0.8059250116348267
+Iter 40/100: -1.0750386714935303
+Iter 50/100: -1.342800498008728
+Iter 60/100: -1.4775663614273071
+Iter 70/100: -1.5644447803497314
+Iter 80/100: -1.6205065250396729
+Iter 90/100: -1.6595042943954468
+Iter 100/100: -1.6898478269577026
+0 trials completed
+[-0.58656125 -1.42478501  0.12388361 -0.7146091 ] 2.9000797
+Iter 10/100: -1.7286655902862549
+Iter 20/100: -1.7573360204696655
+Iter 30/100: -1.7810509204864502
+Iter 40/100: -1.8023079633712769
+Iter 50/100: -1.8204199075698853
+Iter 60/100: -1.835429072380066
+Iter 70/100: -1.8486838340759277
+Iter 80/100: -1.8612524271011353
+Iter 90/100: -1.8724088668823242
+Iter 100/100: -1.8819044828414917
+Iter 10/100: -1.8991316556930542
+Iter 20/100: -1.9121415615081787
+Iter 30/100: -1.9235758781433105
+Iter 40/100: -1.9329187870025635
+Iter 50/100: -1.9424965381622314
+Iter 60/100: -1.9515639543533325
+Iter 70/100: -1.9588196277618408
+Iter 80/100: -1.9654666185379028
+Iter 90/100: -1.9710795879364014
+Iter 100/100: -1.978033185005188
+Iter 10/100: -1.988382339477539
+Iter 20/100: -1.9957988262176514
+Iter 30/100: -2.0027244091033936
+Iter 40/100: -2.0079822540283203
+Iter 50/100: -2.0135724544525146
+Iter 60/100: -2.0188326835632324
+Iter 70/100: -2.0238704681396484
+Iter 80/100: -2.027639150619507
+Iter 90/100: -2.031956911087036
+Iter 100/100: -2.038454294204712
+Iter 10/100: -2.0506420135498047
+Iter 20/100: -2.0572774410247803
+Iter 30/100: -2.062648296356201
+Iter 40/100: -2.0674753189086914
+Iter 50/100: -2.071489095687866
+Iter 60/100: -2.073489189147949
+Iter 70/100: -2.078096866607666
+Iter 80/100: -2.0818490982055664
+Iter 90/100: -2.083117723464966
+Iter 100/100: -2.086883306503296
+Iter 10/100: -2.09387469291687
+Iter 20/100: -2.0958588123321533
+Iter 30/100: -2.0978801250457764
+Iter 40/100: -2.1036272048950195
+Iter 50/100: -2.105255126953125
+Iter 10/100: -2.112060308456421
+Iter 10/100: -2.121220111846924
+Iter 10/100: -2.127281665802002
+Iter 10/100: -2.134239673614502
+Iter 10/100: -2.1392924785614014
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3339204788208008
+Iter 20/100: 1.1494191884994507
+Iter 30/100: 0.7978901863098145
+Iter 40/100: -1.0721278190612793
+Iter 50/100: -1.345638632774353
+Iter 60/100: -1.4882252216339111
+Iter 70/100: -1.5788265466690063
+Iter 80/100: -1.6374938488006592
+Iter 90/100: -1.6776705980300903
+Iter 100/100: -1.7090052366256714
+0 trials completed
+[-0.24682495  0.35337293  1.13894544  0.39178494] 1.6364871
+Iter 10/100: -1.7477335929870605
+Iter 20/100: -1.7777538299560547
+Iter 30/100: -1.8023107051849365
+Iter 40/100: -1.8240782022476196
+Iter 50/100: -1.8412072658538818
+Iter 60/100: -1.856959581375122
+Iter 70/100: -1.8706556558609009
+Iter 80/100: -1.8831030130386353
+Iter 90/100: -1.893818974494934
+Iter 100/100: -1.9039115905761719
+Iter 10/100: -1.9214228391647339
+Iter 20/100: -1.9343475103378296
+Iter 30/100: -1.9464834928512573
+Iter 40/100: -1.9564924240112305
+Iter 50/100: -1.9652265310287476
+Iter 60/100: -1.9742887020111084
+Iter 70/100: -1.9803675413131714
+Iter 80/100: -1.9888554811477661
+Iter 90/100: -1.9936734437942505
+Iter 100/100: -2.000309944152832
+Iter 10/100: -2.0127670764923096
+Iter 20/100: -2.019233465194702
+Iter 30/100: -2.024895191192627
+Iter 40/100: -2.03047251701355
+Iter 50/100: -2.0354015827178955
+Iter 60/100: -2.0414040088653564
+Iter 70/100: -2.0461959838867188
+Iter 80/100: -2.049971580505371
+Iter 90/100: -2.0550642013549805
+Iter 100/100: -2.058556318283081
+Iter 10/100: -2.070756435394287
+Iter 20/100: -2.078784227371216
+Iter 30/100: -2.0851829051971436
+Iter 40/100: -2.088611602783203
+Iter 50/100: -2.093801736831665
+Iter 60/100: -2.0957210063934326
+Iter 10/100: -2.104534149169922
+Iter 20/100: -2.107542037963867
+Iter 10/100: -2.11430287361145
+Iter 20/100: -2.1184582710266113
+Iter 10/100: -2.123257637023926
+Iter 20/100: -2.129066228866577
+Iter 30/100: -2.1302387714385986
+Iter 40/100: -2.133143663406372
+Iter 10/100: -2.137807607650757
+Iter 10/100: -2.1444573402404785
+Iter 20/100: -2.148446798324585
+Iter 30/100: -2.1493184566497803
+Iter 10/100: -2.1570661067962646
+Iter 10/100: -2.161757469177246
+Iter 10/100: -2.1716179847717285
+Iter 10/100: -2.176591396331787
+Iter 10/100: -2.180682897567749
+Iter 10/100: -2.187534809112549
+Iter 10/100: -2.1895875930786133
+Iter 10/100: -2.1945104598999023
+Iter 10/100: -2.2010903358459473
+Iter 10/100: -2.2073259353637695
+Iter 10/100: -2.039963960647583
+20 trials completed
+[ 0.00162983 -0.00720215  0.01977491  0.0297184 ] 0.0013287577432947728
+Iter 10/100: -2.0476458072662354
+Iter 20/100: -2.0520901679992676
+Iter 30/100: -2.0596659183502197
+Iter 40/100: -2.060023546218872
+Iter 50/100: -2.062941312789917
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3435570001602173
+Iter 20/100: 1.1611591577529907
+Iter 30/100: 0.8112202882766724
+Iter 40/100: -1.045986533164978
+Iter 50/100: -1.3156784772872925
+Iter 60/100: -1.4510107040405273
+Iter 70/100: -1.5385700464248657
+Iter 80/100: -1.5949175357818604
+Iter 90/100: -1.634638786315918
+Iter 100/100: -1.6648675203323364
+0 trials completed
+[-1.9047032   0.04326672  0.11873468  0.12870242] 3.6604285
+Iter 10/100: -1.7023307085037231
+Iter 20/100: -1.7321134805679321
+Iter 30/100: -1.7562434673309326
+Iter 40/100: -1.7780505418777466
+Iter 50/100: -1.7957719564437866
+Iter 60/100: -1.8121252059936523
+Iter 70/100: -1.82547128200531
+Iter 80/100: -1.838317632675171
+Iter 90/100: -1.8500441312789917
+Iter 100/100: -1.85952889919281
+Iter 10/100: -1.8778012990951538
+Iter 20/100: -1.8915865421295166
+Iter 30/100: -1.9034160375595093
+Iter 40/100: -1.9133384227752686
+Iter 50/100: -1.9230060577392578
+Iter 60/100: -1.9315202236175537
+Iter 70/100: -1.939831018447876
+Iter 80/100: -1.946227788925171
+Iter 90/100: -1.9537062644958496
+Iter 100/100: -1.9596562385559082
+Iter 10/100: -1.97079598903656
+Iter 20/100: -1.9780019521713257
+Iter 30/100: -1.9840219020843506
+Iter 40/100: -1.9912917613983154
+Iter 50/100: -1.9958292245864868
+Iter 60/100: -2.0016281604766846
+Iter 70/100: -2.0060174465179443
+Iter 80/100: -2.0112061500549316
+Iter 90/100: -2.0177950859069824
+Iter 100/100: -2.0241308212280273
+Iter 10/100: -2.0355730056762695
+Iter 20/100: -2.0428175926208496
+Iter 30/100: -2.0487420558929443
+Iter 40/100: -2.0516746044158936
+Iter 50/100: -2.0562005043029785
+Iter 60/100: -2.0602505207061768
+Iter 70/100: -2.064202308654785
+Iter 80/100: -2.0643198490142822
+Iter 10/100: -2.074274778366089
+Iter 20/100: -2.0778379440307617
+Iter 10/100: -2.086013078689575
+Iter 20/100: -2.089881420135498
+Iter 10/100: -2.0986216068267822
+Iter 20/100: -2.102857828140259
+Iter 10/100: -2.1120803356170654
+Iter 20/100: -2.1137969493865967
+Iter 30/100: -2.1169028282165527
+Iter 10/100: -2.124940872192383
+Iter 10/100: -2.1334176063537598
+Iter 10/100: -2.1401238441467285
+Iter 10/100: -2.145448684692383
+Iter 10/100: -2.1513469219207764
+Iter 10/100: -2.1581966876983643
+Iter 10/100: -2.1620540618896484
+Iter 10/100: -2.166073799133301
+Iter 10/100: -2.175257921218872
+Iter 10/100: -2.010197877883911
+Iter 10/100: -2.020202159881592
+Iter 20/100: -2.0250372886657715
+Iter 30/100: -2.0285849571228027
+Iter 10/100: -2.0375187397003174
+20 trials completed
+[-0.00319195  0.00596762  0.01005697 -0.02315235] 0.0006829750550423341
+Iter 10/100: -2.0426151752471924
+Iter 20/100: -2.045663833618164
+Iter 10/100: -2.0517842769622803
+Iter 10/100: -2.053713798522949
+Iter 10/100: -2.057713031768799
+Iter 10/100: -2.0607171058654785
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3359606266021729
+Iter 20/100: 1.151790738105774
+Iter 30/100: 0.801357090473175
+Iter 40/100: -1.0606688261032104
+Iter 50/100: -1.3307934999465942
+Iter 60/100: -1.4721907377243042
+Iter 70/100: -1.5616189241409302
+Iter 80/100: -1.6203620433807373
+Iter 90/100: -1.6608868837356567
+Iter 100/100: -1.692220687866211
+0 trials completed
+[ 1.22892261  0.8579408  -0.60514765  0.65999209] 3.0481064
+Iter 10/100: -1.731245517730713
+Iter 20/100: -1.7610766887664795
+Iter 30/100: -1.786051630973816
+Iter 40/100: -1.8074824810028076
+Iter 50/100: -1.8256850242614746
+Iter 60/100: -1.8410459756851196
+Iter 70/100: -1.8546661138534546
+Iter 80/100: -1.8672833442687988
+Iter 90/100: -1.8782117366790771
+Iter 100/100: -1.8883346319198608
+Iter 10/100: -1.9052857160568237
+Iter 20/100: -1.9191334247589111
+Iter 30/100: -1.9309473037719727
+Iter 40/100: -1.9410231113433838
+Iter 50/100: -1.9500473737716675
+Iter 60/100: -1.9593305587768555
+Iter 70/100: -1.9664225578308105
+Iter 80/100: -1.9729009866714478
+Iter 90/100: -1.980507254600525
+Iter 100/100: -1.9852755069732666
+Iter 10/100: -1.996117115020752
+Iter 20/100: -2.0032742023468018
+Iter 30/100: -2.0099093914031982
+Iter 40/100: -2.0158493518829346
+Iter 50/100: -2.0212981700897217
+Iter 60/100: -2.0259175300598145
+Iter 70/100: -2.031188726425171
+Iter 80/100: -2.035350799560547
+Iter 90/100: -2.040058135986328
+Iter 100/100: -2.04441237449646
+Iter 10/100: -2.055631637573242
+Iter 20/100: -2.063657760620117
+Iter 30/100: -2.0703654289245605
+Iter 40/100: -2.0727720260620117
+Iter 50/100: -2.078834056854248
+Iter 60/100: -2.081568479537964
+Iter 10/100: -2.0940515995025635
+Iter 20/100: -2.0963544845581055
+Iter 10/100: -2.1025514602661133
+Iter 10/100: -2.114922523498535
+Iter 10/100: -2.119908571243286
+Iter 10/100: -2.126023292541504
+Iter 20/100: -2.1308822631835938
+Iter 10/100: -2.137625217437744
+Iter 20/100: -2.139788866043091
+Iter 10/100: -2.1436402797698975
+Iter 10/100: -2.1508889198303223
+Iter 10/100: -2.1559512615203857
+Iter 20/100: -2.159590244293213
+Iter 10/100: -2.164066791534424
+Iter 10/100: -2.1697726249694824
+Iter 10/100: -2.1751670837402344
+Iter 20/100: -2.1787850856781006
+Iter 10/100: -2.1827871799468994
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.330128788948059
+Iter 20/100: 1.1448144912719727
+Iter 30/100: 0.792657196521759
+Iter 40/100: -1.1174290180206299
+Iter 50/100: -1.3890067338943481
+Iter 60/100: -1.5301387310028076
+Iter 70/100: -1.6195828914642334
+Iter 80/100: -1.6779873371124268
+Iter 90/100: -1.7181720733642578
+Iter 100/100: -1.7489510774612427
+0 trials completed
+[-0.16632462  0.16504448  0.20250997 -0.44069321] 0.29012436
+Iter 10/100: -1.7886048555374146
+Iter 20/100: -1.8178421258926392
+Iter 30/100: -1.8425836563110352
+Iter 40/100: -1.8632290363311768
+Iter 50/100: -1.8804287910461426
+Iter 60/100: -1.8960915803909302
+Iter 70/100: -1.9085888862609863
+Iter 80/100: -1.9207736253738403
+Iter 90/100: -1.9313981533050537
+Iter 100/100: -1.940807819366455
+Iter 10/100: -1.9568558931350708
+Iter 20/100: -1.9700653553009033
+Iter 30/100: -1.9813531637191772
+Iter 40/100: -1.9910036325454712
+Iter 50/100: -1.9999558925628662
+Iter 60/100: -2.0075275897979736
+Iter 70/100: -2.014331102371216
+Iter 80/100: -2.0219976902008057
+Iter 90/100: -2.0271713733673096
+Iter 100/100: -2.0333752632141113
+Iter 10/100: -2.044086456298828
+Iter 20/100: -2.050785779953003
+Iter 30/100: -2.057079792022705
+Iter 40/100: -2.0626087188720703
+Iter 50/100: -2.0673787593841553
+Iter 60/100: -2.0714333057403564
+Iter 70/100: -2.076068162918091
+Iter 80/100: -2.0804996490478516
+Iter 90/100: -2.084465265274048
+Iter 100/100: -2.0881521701812744
+Iter 10/100: -2.098680257797241
+Iter 20/100: -2.1060142517089844
+Iter 30/100: -2.114013195037842
+Iter 40/100: -2.1189615726470947
+Iter 50/100: -2.1219892501831055
+Iter 60/100: -2.127706289291382
+Iter 10/100: -2.134692430496216
+Iter 20/100: -2.138504981994629
+Iter 10/100: -2.1475841999053955
+Iter 10/100: -2.1540653705596924
+Iter 20/100: -2.1577250957489014
+Iter 10/100: -2.163503646850586
+Iter 10/100: -2.165109395980835
+Iter 10/100: -2.1728031635284424
+Iter 10/100: -2.181540012359619
+Iter 10/100: -2.188105344772339
+Iter 10/100: -2.1933820247650146
+Iter 10/100: -2.1999199390411377
+Iter 10/100: -2.2084555625915527
+Iter 10/100: -2.216447591781616
+Iter 10/100: -2.2197582721710205
+Iter 10/100: -2.2267160415649414
+Iter 10/100: -2.2295238971710205
+Iter 10/100: -2.2373530864715576
+20 trials completed
+[-0.16632462  0.16504448  0.20250997 -0.44069321] 0.2901243567466736
+Iter 10/100: -2.240586757659912
+Iter 10/100: -2.2443692684173584
+Iter 10/100: -2.250623941421509
+Iter 10/100: -2.0649099349975586
+Iter 10/100: -2.081324815750122
+Iter 10/100: -2.0883448123931885
+Iter 20/100: -2.092478036880493
+Iter 30/100: -2.0982322692871094
+Iter 40/100: -2.1015427112579346
+Iter 50/100: -2.1034557819366455
+Iter 10/100: -2.1093993186950684
+Iter 10/100: -2.112008571624756
+Iter 10/100: -2.1163206100463867
+Iter 10/100: -2.125493049621582
+Iter 10/100: -2.125278949737549
+Iter 10/100: -2.1307668685913086
+Iter 10/100: -2.1320149898529053
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3376941680908203
+Iter 20/100: 1.153907060623169
+Iter 30/100: 0.8037191033363342
+Iter 40/100: -1.0523120164871216
+Iter 50/100: -1.3195734024047852
+Iter 60/100: -1.4594143629074097
+Iter 70/100: -1.5478053092956543
+Iter 80/100: -1.6058515310287476
+Iter 90/100: -1.6458945274353027
+Iter 100/100: -1.676777958869934
+0 trials completed
+[0.55993443 0.0263916  0.58238619 0.38174204] 0.79912376
+Iter 10/100: -1.7144672870635986
+Iter 20/100: -1.7448590993881226
+Iter 30/100: -1.769713044166565
+Iter 40/100: -1.790492296218872
+Iter 50/100: -1.8093074560165405
+Iter 60/100: -1.8253546953201294
+Iter 70/100: -1.8384028673171997
+Iter 80/100: -1.8511797189712524
+Iter 90/100: -1.8626354932785034
+Iter 100/100: -1.872728705406189
+Iter 10/100: -1.889665126800537
+Iter 20/100: -1.90350341796875
+Iter 30/100: -1.9141967296600342
+Iter 40/100: -1.9255340099334717
+Iter 50/100: -1.934662103652954
+Iter 60/100: -1.94328773021698
+Iter 70/100: -1.9515876770019531
+Iter 80/100: -1.9581260681152344
+Iter 90/100: -1.9647269248962402
+Iter 100/100: -1.9711239337921143
+Iter 10/100: -1.9824062585830688
+Iter 20/100: -1.9896546602249146
+Iter 30/100: -1.995348572731018
+Iter 40/100: -2.0021281242370605
+Iter 50/100: -2.0065720081329346
+Iter 60/100: -2.0124921798706055
+Iter 70/100: -2.0172324180603027
+Iter 80/100: -2.0213303565979004
+Iter 90/100: -2.0256688594818115
+Iter 100/100: -2.031818389892578
+Iter 10/100: -2.0447604656219482
+Iter 20/100: -2.051361083984375
+Iter 30/100: -2.056288480758667
+Iter 40/100: -2.061661720275879
+Iter 50/100: -2.065587282180786
+Iter 60/100: -2.071150302886963
+Iter 70/100: -2.070953369140625
+Iter 10/100: -2.0794153213500977
+Iter 20/100: -2.0827817916870117
+Iter 10/100: -2.090855360031128
+Iter 20/100: -2.0944745540618896
+Iter 30/100: -2.0978407859802246
+Iter 40/100: -2.1001243591308594
+Iter 50/100: -2.10292911529541
+Iter 60/100: -2.106555223464966
+Iter 10/100: -2.1168205738067627
+Iter 20/100: -2.1176536083221436
+Iter 10/100: -2.126321315765381
+Iter 10/100: -2.132364511489868
+Iter 10/100: -2.1355035305023193
+Iter 20/100: -2.1393909454345703
+Iter 30/100: -2.1406285762786865
+Iter 40/100: -2.1444473266601562
+Iter 10/100: -2.1492843627929688
+Iter 10/100: -2.154207944869995
+Iter 10/100: -2.162053346633911
+Iter 10/100: -2.1655900478363037
+Iter 10/100: -2.1736228466033936
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3373944759368896
+Iter 20/100: 1.1539405584335327
+Iter 30/100: 0.8038021922111511
+Iter 40/100: -1.0485070943832397
+Iter 50/100: -1.3152010440826416
+Iter 60/100: -1.455243706703186
+Iter 70/100: -1.5437231063842773
+Iter 80/100: -1.6013010740280151
+Iter 90/100: -1.641472339630127
+Iter 100/100: -1.6725232601165771
+0 trials completed
+[-1.40590136 -0.31552682  0.25672661  1.37793444] 4.0407276
+Iter 10/100: -1.710561990737915
+Iter 20/100: -1.739989995956421
+Iter 30/100: -1.7648489475250244
+Iter 40/100: -1.786056637763977
+Iter 50/100: -1.8039370775222778
+Iter 60/100: -1.8198659420013428
+Iter 70/100: -1.833774209022522
+Iter 80/100: -1.84665846824646
+Iter 90/100: -1.8578461408615112
+Iter 100/100: -1.867769479751587
+Iter 10/100: -1.8851581811904907
+Iter 20/100: -1.8993921279907227
+Iter 30/100: -1.9105724096298218
+Iter 40/100: -1.9209442138671875
+Iter 50/100: -1.9310904741287231
+Iter 60/100: -1.9386768341064453
+Iter 70/100: -1.9466807842254639
+Iter 80/100: -1.954638957977295
+Iter 90/100: -1.9606132507324219
+Iter 100/100: -1.9671422243118286
+Iter 10/100: -1.976479411125183
+Iter 20/100: -1.9836196899414062
+Iter 30/100: -1.9905579090118408
+Iter 40/100: -1.9969373941421509
+Iter 50/100: -2.0019519329071045
+Iter 60/100: -2.0062527656555176
+Iter 70/100: -2.0121707916259766
+Iter 80/100: -2.016925811767578
+Iter 90/100: -2.022183418273926
+Iter 100/100: -2.0279529094696045
+Iter 10/100: -2.033576488494873
+Iter 20/100: -2.0404622554779053
+Iter 30/100: -2.0469417572021484
+Iter 40/100: -2.0510003566741943
+Iter 50/100: -2.054579973220825
+Iter 60/100: -2.0569396018981934
+Iter 70/100: -2.061309814453125
+Iter 80/100: -2.0641374588012695
+Iter 10/100: -2.0723867416381836
+Iter 20/100: -2.07725191116333
+Iter 30/100: -2.0803773403167725
+Iter 40/100: -2.0822949409484863
+Iter 50/100: -2.0837457180023193
+Iter 10/100: -2.0924363136291504
+Iter 10/100: -2.0965867042541504
+Iter 10/100: -2.1079559326171875
+Iter 20/100: -2.1084094047546387
+Iter 10/100: -2.1162045001983643
+Iter 20/100: -2.120997190475464
+Iter 30/100: -2.1213624477386475
+Iter 10/100: -2.127927541732788
+Iter 10/100: -2.135554790496826
+Iter 10/100: -2.142393112182617
+Iter 10/100: -2.147582530975342
+Iter 10/100: -2.152283191680908
+Iter 10/100: -2.160022258758545
+Iter 10/100: -2.1658084392547607
+Iter 10/100: -2.1780202388763428
+Iter 10/100: -2.1735100746154785
+Iter 10/100: -2.017683267593384
+Iter 20/100: -2.019432544708252
+Iter 30/100: -2.025141716003418
+Iter 40/100: -2.0279459953308105
+Iter 50/100: -2.0296690464019775
+Iter 60/100: -2.0343480110168457
+Iter 10/100: -2.0375044345855713
+20 trials completed
+[-0.00293922 -0.00798416 -0.00458145  0.01882362] 0.00044770437671104446
+Iter 10/100: -2.040473461151123
+Iter 10/100: -2.04636812210083
+Iter 10/100: -2.0517995357513428
+Iter 10/100: -2.0562591552734375
+Iter 10/100: -2.058356523513794
+Iter 10/100: -2.0661919116973877
+Iter 10/100: -2.066772699356079
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3357771635055542
+Iter 20/100: 1.1528453826904297
+Iter 30/100: 0.8018932342529297
+Iter 40/100: -1.0623254776000977
+Iter 50/100: -1.3264355659484863
+Iter 60/100: -1.4682852029800415
+Iter 70/100: -1.5568969249725342
+Iter 80/100: -1.6149482727050781
+Iter 90/100: -1.6549561023712158
+Iter 100/100: -1.6858872175216675
+0 trials completed
+[ 0.55654297  0.16251935 -0.27383388  1.48347181] 2.6118262
+Iter 10/100: -1.7247326374053955
+Iter 20/100: -1.7541228532791138
+Iter 30/100: -1.7791248559951782
+Iter 40/100: -1.8003894090652466
+Iter 50/100: -1.8186039924621582
+Iter 60/100: -1.8340615034103394
+Iter 70/100: -1.8480174541473389
+Iter 80/100: -1.8597185611724854
+Iter 90/100: -1.8710931539535522
+Iter 100/100: -1.8809394836425781
+Iter 10/100: -1.8976304531097412
+Iter 20/100: -1.9107918739318848
+Iter 30/100: -1.9226737022399902
+Iter 40/100: -1.9328027963638306
+Iter 50/100: -1.942631721496582
+Iter 60/100: -1.949658989906311
+Iter 70/100: -1.9579617977142334
+Iter 80/100: -1.9656257629394531
+Iter 90/100: -1.9721744060516357
+Iter 100/100: -1.9783982038497925
+Iter 10/100: -1.9890568256378174
+Iter 20/100: -1.9961824417114258
+Iter 30/100: -2.0012784004211426
+Iter 40/100: -2.0084280967712402
+Iter 50/100: -2.013338565826416
+Iter 60/100: -2.0174355506896973
+Iter 70/100: -2.023465871810913
+Iter 80/100: -2.0273959636688232
+Iter 90/100: -2.0311272144317627
+Iter 100/100: -2.037104368209839
+Iter 10/100: -2.0476016998291016
+Iter 20/100: -2.0551977157592773
+Iter 30/100: -2.0631418228149414
+Iter 40/100: -2.065920352935791
+Iter 50/100: -2.069300651550293
+Iter 60/100: -2.074394464492798
+Iter 70/100: -2.0781540870666504
+Iter 10/100: -2.085841655731201
+Iter 20/100: -2.0892109870910645
+Iter 30/100: -2.0923919677734375
+Iter 10/100: -2.0976099967956543
+Iter 20/100: -2.1011345386505127
+Iter 30/100: -2.1058096885681152
+Iter 10/100: -2.112037420272827
+Iter 20/100: -2.1148996353149414
+Iter 10/100: -2.123384475708008
+Iter 20/100: -2.1235058307647705
+Iter 10/100: -2.1296639442443848
+Iter 10/100: -2.1369311809539795
+Iter 10/100: -2.1436126232147217
+Iter 10/100: -2.151352882385254
+Iter 10/100: -2.1564292907714844
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3377466201782227
+Iter 20/100: 1.1529150009155273
+Iter 30/100: 0.8004936575889587
+Iter 40/100: -1.100083351135254
+Iter 50/100: -1.372039556503296
+Iter 60/100: -1.508344054222107
+Iter 70/100: -1.5959594249725342
+Iter 80/100: -1.6530500650405884
+Iter 90/100: -1.6921137571334839
+Iter 100/100: -1.7220382690429688
+0 trials completed
+[ 2.01962421 -0.88650916 -0.19160566  0.45383166] 5.107456
+Iter 10/100: -1.7586909532546997
+Iter 20/100: -1.7875542640686035
+Iter 30/100: -1.8122011423110962
+Iter 40/100: -1.8323490619659424
+Iter 50/100: -1.8506994247436523
+Iter 60/100: -1.8655825853347778
+Iter 70/100: -1.8791224956512451
+Iter 80/100: -1.8910025358200073
+Iter 90/100: -1.9019460678100586
+Iter 100/100: -1.91200852394104
+Iter 10/100: -1.9283716678619385
+Iter 20/100: -1.941362738609314
+Iter 30/100: -1.9530476331710815
+Iter 40/100: -1.963074803352356
+Iter 50/100: -1.9712707996368408
+Iter 60/100: -1.9793789386749268
+Iter 70/100: -1.9882434606552124
+Iter 80/100: -1.994231104850769
+Iter 90/100: -2.0007553100585938
+Iter 100/100: -2.0069997310638428
+Iter 10/100: -2.01772403717041
+Iter 20/100: -2.0249783992767334
+Iter 30/100: -2.0308661460876465
+Iter 40/100: -2.0370426177978516
+Iter 50/100: -2.041656494140625
+Iter 60/100: -2.046769857406616
+Iter 70/100: -2.0499894618988037
+Iter 80/100: -2.05450177192688
+Iter 90/100: -2.0595321655273438
+Iter 100/100: -2.0656609535217285
+Iter 10/100: -2.0756351947784424
+Iter 20/100: -2.083962917327881
+Iter 30/100: -2.0895299911499023
+Iter 40/100: -2.0929672718048096
+Iter 10/100: -2.1028153896331787
+Iter 20/100: -2.108576774597168
+Iter 10/100: -2.1164023876190186
+Iter 20/100: -2.117638349533081
+Iter 10/100: -2.1271791458129883
+Iter 20/100: -2.130882501602173
+Iter 30/100: -2.133491277694702
+Iter 10/100: -2.1404542922973633
+Iter 20/100: -2.1458921432495117
+Iter 10/100: -2.1528520584106445
+Iter 10/100: -2.1622183322906494
+Iter 10/100: -2.168484687805176
+Iter 10/100: -2.171610116958618
+Iter 10/100: -2.1758315563201904
+Iter 10/100: -2.177536725997925
+Iter 10/100: -2.1817877292633057
+Iter 10/100: -2.187771797180176
+Iter 10/100: -2.196897268295288
+Iter 10/100: -2.202981472015381
+Iter 10/100: -2.2065672874450684
+Iter 10/100: -2.2105696201324463
+20 trials completed
+[ 0.01690483 -0.00453234 -0.00047207  0.01457787] 0.0005190524036606803
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Iter 10/100: 1.3355121612548828
+Iter 20/100: 1.1515865325927734
+Iter 30/100: 0.8008497953414917
+Iter 40/100: -1.0840169191360474
+Iter 50/100: -1.3501967191696167
+Iter 60/100: -1.488405704498291
+Iter 70/100: -1.576085090637207
+Iter 80/100: -1.6330922842025757
+Iter 90/100: -1.6726735830307007
+Iter 100/100: -1.7032461166381836
+0 trials completed
+[-1.35468687 -0.12485936 -0.09749145 -0.58416805] 2.2015233
+Iter 10/100: -1.741976022720337
+Iter 20/100: -1.7712855339050293
+Iter 30/100: -1.7960152626037598
+Iter 40/100: -1.816880226135254
+Iter 50/100: -1.8345555067062378
+Iter 60/100: -1.8503583669662476
+Iter 70/100: -1.8635601997375488
+Iter 80/100: -1.8758097887039185
+Iter 90/100: -1.8867944478988647
+Iter 100/100: -1.8966442346572876
+Iter 10/100: -1.9140586853027344
+Iter 20/100: -1.926485300064087
+Iter 30/100: -1.9387859106063843
+Iter 40/100: -1.9480249881744385
+Iter 50/100: -1.9571654796600342
+Iter 60/100: -1.9654676914215088
+Iter 70/100: -1.9731991291046143
+Iter 80/100: -1.9804795980453491
+Iter 90/100: -1.9868321418762207
+Iter 100/100: -1.9929531812667847
+Iter 10/100: -2.00347638130188
+Iter 20/100: -2.0100080966949463
+Iter 30/100: -2.0173373222351074
+Iter 40/100: -2.023371696472168
+Iter 50/100: -2.027595043182373
+Iter 60/100: -2.032822370529175
+Iter 70/100: -2.0381674766540527
+Iter 80/100: -2.042067527770996
+Iter 90/100: -2.04589581489563
+Iter 100/100: -2.053244113922119
+Iter 10/100: -2.0623459815979004
+Iter 20/100: -2.0716419219970703
+Iter 30/100: -2.0762343406677246
+Iter 40/100: -2.078423500061035
+Iter 50/100: -2.0842437744140625
+Iter 60/100: -2.0878548622131348
+Iter 70/100: -2.093052864074707
+Iter 80/100: -2.0947506427764893
+Iter 90/100: -2.0989644527435303
+Iter 100/100: -2.1024229526519775
+Iter 10/100: -2.109161376953125
+Iter 10/100: -2.1155881881713867
+Iter 20/100: -2.118539571762085
+Iter 30/100: -2.1203343868255615
+Iter 10/100: -2.1288766860961914
+Iter 10/100: -2.135043144226074
+Iter 10/100: -2.143749475479126
+Iter 20/100: -2.1446235179901123
+Iter 10/100: -2.153245210647583
+Iter 10/100: -2.15982985496521
+Iter 20/100: -2.1583380699157715
+Iter 10/100: -2.1637864112854004
+Error: Matrix not positive definite after repeatedly adding jitter up to 1.0e-04. Original error on first attempt: cholesky: The factorization could not be completed because the input is not positive-definite (the leading minor of order 1 is not positive-definite).
+Traceback (most recent call last):
+  File "nextorch_testing_scripts/run_mean_min_bench.py", line 19, in <module>
+    print(bayopt.run_single_obj_experiment(run_bayes_opt_benchmark_fns,
+  File "/home3/xzdj34/MO-BED-project/nextorch_testing_scripts/bayesian_optimisation.py", line 53, in run_single_obj_experiment
+    Y_init = bo.eval_objective_func_encoding(X_init, Exp.parameter_space, objective_func)
+  File "/home3/xzdj34/MO-BED-project/venv/lib/python3.8/site-packages/nextorch/bo.py", line 203, in eval_objective_func_encoding
+    Y = objective_func(X_real)
+  File "/home3/xzdj34/MO-BED-project/nextorch_testing_scripts/bayesian_optimisation.py", line 21, in new_func
+    y_new = func(X[i, 0])
+  File "/home3/xzdj34/MO-BED-project/nextorch_testing_scripts/single_obj_benchmarks.py", line 30, in new_function
+    return mean_min_benchmark(func, n_dims, total_samples, n_trials, iterations)
+  File "/home3/xzdj34/MO-BED-project/nextorch_testing_scripts/single_obj_benchmarks.py", line 25, in mean_min_benchmark
+    return sum(min_values)/len(min_values)
+ZeroDivisionError: division by zero
